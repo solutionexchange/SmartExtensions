@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--
+    Package release {build-release}
+    File UUID: 46f06a2a-1ba5-47e1-9ee8-b563b0f70a8a
+-->
+<html>
+
+<head>
+    <title>Package ({build-package}) : Extension Package Manager</title>
+    <meta uuid="7355dc0d-b47e-4c65-8f55-c18326ab74dc" />
+    <meta file-uuid="46f06a2a-1ba5-47e1-9ee8-b563b0f70a8a" />
+    <meta version="{build-release}" />
+    <!-- Build-Include: head-meta -->
+    <!-- Build-Include: head-favicon -->
+    <!-- Build-Include: head-stylesheet-libraries-basics -->
+    <!-- Stylesheet: Libraries Extension (additionally for this extension) -->
+    <!-- Build-Include: head-stylesheet-core-basics -->
+    <!-- Build-Include: head-stylesheet-theme-opentext-cux2-extension -->
+    <!-- Stylesheet: Extension Basics -->
+    <link rel="stylesheet" href="css/styles.extension.min.css?release={build-release}" />
+    <!-- Build-Include: head-script-libraries-basics -->
+    <!-- Scripts: Libraries Extension (additionally for this extension) -->
+    <!-- Build-Include: head-script-controller-basics -->
+    <!-- Scripts: RQL-Connector Extension (additionally for this extension) -->
+    <script src="../../components/libraries/rql.connector.functions.clipboard.js?release={build-release}"></script>
+    <script src="../../components/libraries/rql.connector.functions.plugins.js?release={build-release}"></script>
+    <!-- Build-Include: head-script-core-basics -->
+    <!-- Scripts: Core OpenText (UI Controls) -->
+    <script src="../../global/js/functions.opentext.js?release={build-release}"></script>
+    <!-- Scripts: Extension Basics -->
+    <script src="js/functions.extension.js?release={build-release}"></script>
+</head>
+
+<body>
+    <!-- Build-Include: body-loading -->
+    <!-- Build-Include: body-no-support-ie -->
+    <!-- Dialog: Main -->
+    <div class="container fade" id="idMainDialog">
+        <!-- Build-Include: dialog-head-label-controls -->
+        <!-- Dialog: Body -->
+        <div class="row">
+            <div class="col-8">
+                <div class="accordion" id="accordionExtensions">
+                    <div class="card shadow">
+                        <div class="card-header font-weight-bold cursor-pointer" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span data-localized-extension="label-cardExtensionsInstalled"></span>
+                            <span class="accordionState">
+                                <i class="far fa-folder"></i>
+                                <i class="far fa-folder-open"></i>
+                            </span>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExtensions">
+                            <div class="card-body height-default-accordion overflow-y-scroll">
+                                <table class="table table-sm">
+                                    <tbody id="listExtensionsInstalled">
+                                        <tr class="notify">
+                                            <td colspan="4">
+                                                <br />
+                                                <div class="loading" data-localized-core="text-loading">
+                                                    <div class="spinner-grow text-danger spinner-grow-sm" role="status"></div>&nbsp;&nbsp;
+                                                </div>
+                                                <div class="no-data" data-localized-core="text-noData">
+                                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow">
+                        <div class="card-header font-weight-bold cursor-pointer" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span class="card-title" data-localized-extension="label-cardExtensionsAvailable"></span>
+                            <span class="accordionState">
+                                <i class="far fa-folder"></i>
+                                <i class="far fa-folder-open"></i>
+                            </span>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExtensions">
+                            <div class="card-body height-default-accordion overflow-y-scroll">
+                                <table class="table table-sm">
+                                    <tbody id="listExtensionsAvailable">
+                                        <tr class="notify">
+                                            <td colspan="4">
+                                                <br />
+                                                <div class="loading" data-localized-core="text-loading">
+                                                    <div class="spinner-grow text-danger spinner-grow-sm" role="status"></div>&nbsp;&nbsp;
+                                                </div>
+                                                <div class="no-data" data-localized-core="text-noData">
+                                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        <span class="card-title" data-localized-extension="label-cardPackage"></span>
+                    </div>
+                    <div class="card-body height-default overflow-y-scroll">
+                        <table class="table table-sm">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th colspan="2" data-localized-extension="label-tablePackageConfigured">
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="listPackageConfigured">
+                                <tr class="notify">
+                                    <td colspan="2">
+                                        <br />
+                                        <div class="loading" data-localized-core="text-loading">
+                                            <div class="spinner-grow text-danger spinner-grow-sm" role="status"></div>&nbsp;&nbsp;
+                                        </div>
+                                        <div class="no-data" data-localized-core="text-noData">
+                                            <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <table class="table table-sm">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th colspan="2" data-localized-extension="label-tablePackageInstalled">
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="listPackageInstalled">
+                                <tr class="notify">
+                                    <td colspan="2">
+                                        <br />
+                                        <div class="loading" data-localized-core="text-loading">
+                                            <div class="spinner-grow text-danger spinner-grow-sm" role="status"></div>&nbsp;&nbsp;
+                                        </div>
+                                        <div class="no-data" data-localized-core="text-noData">
+                                            <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <button type="button" class="btn btn-block" data-localized-extension="label-buttonPackageUpdate" id="updatePackageSettings" disabled></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- Dialog: Footer -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-body pt-2 pb-2 d-flex justify-content-end">
+                        <div class="btn-group" role="group" aria-label="controlsDefault">
+                            <!--
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-resetSelection'></span>" id="resetSelection" disabled>
+                                <i class="fas fa-eraser"></i>
+                            </button>
+                            -->
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-reloadAll'></span>" id="reloadAll" disabled>
+                                <i class="fas fa-sync"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+    </div>
+    <!-- Build-Include: modal-loading -->
+    <!-- Build-Include: modal-about -->
+    <!-- Build-Include: modal-processing -->
+    <!-- Templates: Handlebars -->
+    <script id="template-item-extension-installed" type="text/x-handlebars-template">
+        <tr class="cursor-pointer item package-{{Package}}" data-guid="{{Guid}}" data-name="{{Name}}" data-type="admin.3420" data-uri="{{Uri}}" data-release="{{Release}}" data-iconsource="{{IconSource}}" data-active="{{Active}}" data-package="{{Package}}" data-installer="{{Installer}}">
+            <td class="text-left align-middle showInTree" style="width: 30px; height: 60px;">
+                <h6 style="padding-top: 10px;">
+                    <i class="style-goto fas fa-share text-primary" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<span data-localized-core='tooltip-showInTree'></span>"></i>
+                </h6>
+            </td>
+            <td class="cursor-default text-center align-middle" style="width: 40px; height: 60px;">
+                <h5>
+                    <img class="style-logo-list" src="../../../{{IconSource}}" />
+                </h5>
+            </td>
+            <td class="forSelection {{Active}}">
+                <span>
+                    {{Name}}
+                </span>
+                <br />
+                <small class="text-secondary font-weight-light">{{Release}} : {{ExtensionName}}</small>
+            </td>
+            <td class="text-left align-bottom" style="width: 30px; height: 60px;">
+                <label class="switch">
+                    <input type="checkbox" {{Active}}>
+                    <span class="slider"></span>
+                </label>
+            </td>
+        </tr>
+    </script>
+    <script id="template-item-extension-disabled" type="text/x-handlebars-template">
+        <tr class="item package-{{Package}}" data-guid="{{Guid}}" data-name="{{Name}}" data-type="admin.3420" data-uri="{{Uri}}" data-release="{{Release}}" data-iconsource="{{IconSource}}" data-active="{{Active}}" data-package="{{Package}}" data-installer="{{Installer}}">
+            <td class="cursor-pointer text-left align-middle showInTree" style="width: 30px; height: 60px;">
+                <h6 style="padding-top: 10px;">
+                    <i class="style-goto fas fa-share text-primary" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<span data-localized-core='tooltip-showInTree'></span>"></i>
+                </h6>
+            </td>
+            <td class="cursor-default text-center align-middle" style="width: 40px; height: 60px;">
+                <h5>
+                    <img class="style-logo-list" src="../../../{{IconSource}}" />
+                </h5>
+            </td>
+            <td class="cursor-disabled">
+                <span>
+                    {{Name}}
+                </span>
+                <br />
+                <small class="text-secondary font-weight-light">{{Release}} : {{ExtensionName}}</small>
+            </td>
+            <td class="cursor-disabled text-left align-bottom" style="width: 30px; height: 60px;">
+                <label class="switch">
+                    <input type="checkbox" {{Active}} disabled>
+                    <span class="slider cursor-disabled"></span>
+                </label>
+            </td>
+        </tr>
+    </script>
+    <script id="template-item-extension-import" type="text/x-handlebars-template">
+        <tr class="cursor-pointer item package-{{Package}}" data-guid="{{Guid}}" data-name="{{Name}}" data-type="admin.3420" data-uri="{{Uri}}" data-release="{{Release}}" data-package="{{Package}}">
+            <td class="cursor-default text-left align-middle" style="width: 30px; height: 60px;">
+                &nbsp;
+            </td>
+            <td class="cursor-default text-center align-middle" style="width: 40px; height: 60px;">
+                <h5>
+                    <img class="style-logo-list" src="../../../{{IconSource}}" />
+                </h5>
+            </td>
+            <td class="forSelection {{Active}}">
+                <span>
+                    {{Name}}
+                </span>
+                <br />
+                <small class="text-secondary font-weight-light">{{Release}} : {{ExtensionName}}</small>
+            </td>
+            <td class="text-left align-middle" style="width: 30px; height: 60px;">
+                <button type="button" class="btn btn-success btn-sm importExtension">
+                    <i class="fas fa-download"></i>
+                </button>
+            </td>
+        </tr>
+    </script>
+    <script id="template-item-package-information" type="text/x-handlebars-template">
+        <tr>
+            <td data-localized-extension="label-tablePackageInformationName"></td>
+            <td>
+                <span class="text-{{Color}} valuePackage">{{Package}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td data-localized-extension="label-tablePackageInformationRelease"></td>
+            <td>
+                <span class="text-{{Color}} valueRelease">{{Release}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td data-localized-extension="label-tablePackageInformationCreation"></td>
+            <td>
+                <span class="text-{{Color}} valueCreation">{{Creation}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td data-localized-extension="label-tablePackageInformationCompatibility"></td>
+            <td>
+                <span class="text-{{Color}} valueCompatibility">{{Compatibility}}</span>
+            </td>
+        </tr>
+    </script>
+</body>
+
+</html>

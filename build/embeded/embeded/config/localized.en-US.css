@@ -1,0 +1,31 @@
+/* ----- ----- ----- ----- ----- ----- ----- -----
+   Package release 16.0.0.1207
+   File UUID: 90fb4dbf-d73d-4353-a27b-25fa974171b2
+   ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-embeded="en-US"] [data-localized-embeded="label-name"]>.name::before {
+    content: "Integration tester";
+}
+
+[lang-embeded="en-US"] [data-localized-embeded="label-name"]>.name>sup::after {
+    content: "(beta)";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-embeded="en-US"] [data-localized-embeded="text-id-001"]::after {
+    content: "Please check browser console for more information (F12).";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-embeded="en-US"] [data-localized-embeded="tab-id-001"]::after {
+    content: "Home";
+}
+
+[lang-embeded="en-US"] [data-localized-embeded="tab-id-002"]::after {
+    content: "Connector Object";
+}
+
+[lang-embeded="en-US"] [data-localized-embeded="tab-id-003"]::after {
+    content: "General";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */

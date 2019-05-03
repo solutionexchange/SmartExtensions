@@ -1,0 +1,31 @@
+/* ----- ----- ----- ----- ----- ----- ----- -----
+   Package release {build-release}
+   File UUID: 059b9fc1-a347-41da-8971-9bf0c768a5c4
+   ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="label-name"]>.name::before {
+    content: "Webservice-Tester";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-name"]>.name>sup::after {
+    content: "(beta)";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="text-id-001"]::after {
+    content: "Weitere Informationen finden Sie in der Browserkonsole (F12).";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="tab-id-001"]::after {
+    content: "Start";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tab-id-002"]::after {
+    content: "Konnektor-Objekt";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tab-id-003"]::after {
+    content: "Allgemein";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */

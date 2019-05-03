@@ -1,0 +1,207 @@
+/* ----- ----- ----- ----- ----- ----- ----- -----
+   Package release {build-release}
+   File UUID: c762a5bd-8801-4ea3-aea1-020a98ee41cf
+   ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="label-name"]>.name::before {
+    content: "Favoriten-Manager";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-name"]>.name>sup::after {
+    content: "(beta)";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="label-cardFavorites"]::before {
+    content: "Favoriten";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-cardClipboard"]::before {
+    content: "Ablage";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="label-tabPages"]::before {
+    content: "Seiten";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-tabLinks"]::before {
+    content: "Links";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-tabContentClasses"]::before {
+    content: "Content-Klassen";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="text-loading-forFavorites"]::after {
+    content: "Daten werden ermittelt.";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="text-noData-forFavoritesPages"]::after {
+    content: "Keine Daten vorhanden!";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="text-noData-forFavoritesLinks"]::after {
+    content: "Keine Daten vorhanden!";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="text-noData-forFavoritesContentClasses"]::after {
+    content: "Keine Daten vorhanden!";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="text-loading-forClipboard"]::after {
+    content: "Daten werden ermittelt.";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="text-noData-forClipboardPages"]::after {
+    content: "Keine Daten vorhanden!";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="text-noData-forClipboardLinks"]::after {
+    content: "Keine Daten vorhanden!";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="text-noData-forClipboardContentClasses"]::after {
+    content: "Keine Daten vorhanden!";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="tooltip-reloadAll-fromFavorites"]::after {
+    content: "Neu laden";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-resetSelection-fromFavorites"]::after {
+    content: "Auswahl zurücksetzen";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-selectAll-fromTabFavorites"]::after {
+    content: "Alles auswählen";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-deleteSelection-fromFavorites"]::after {
+    content: "Auswahl löschen";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-repairSelection-fromFavorites"]::after {
+    content: "Auswahl reparieren";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-moveSelection-toClipboard"]::after {
+    content: "In Ablage verschieben";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-copySelection-toClipboard"]::after {
+    content: "In Ablage kopieren";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-removeSelection-fromClipboard"]::after {
+    content: "Aus Ablage entfernen";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="tooltip-reloadAll-fromClipboard"]::after {
+    content: "Neu laden";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-resetSelection-fromClipboard"]::after {
+    content: "Auswahl zurücksetzen";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-selectAll-fromTabClipboard"]::after {
+    content: "Alles auswählen";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-deleteSelection-fromClipboard"]::after {
+    content: "Auswahl löschen";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-moveSelection-toFavorites"]::after {
+    content: "In Favoriten verschieben";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-copySelection-toFavorites"]::after {
+    content: "In Favoriten kopieren";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-removeSelection-fromFavorites"]::after {
+    content: "Aus Favoriten entfernen";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPage"]::after {
+    content: "Seite";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageNew"]::after {
+    content: "Seite neu";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageChanged"]::after {
+    content: "Seite geändert";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageDraft"]::after {
+    content: "Seitenentwurf";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageReleased"]::after {
+    content: "Seite veröffentlicht";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageKeyword"]::after {
+    content: "Seite mit Schlagworten";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageNotAvailable"]::after {
+    content: "Seite nicht verfügbar";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageNeverReleased"]::after {
+    content: "Seite nie veröffentlicht";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageDeletedRecyle"]::after {
+    content: "Seite gelöscht (Papierkorb)";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageArchived"]::after {
+    content: "Seite archiviert";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageRemovedCompletly"]::after {
+    content: "Seite komplett entfernen";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageWaitingCorrection"]::after {
+    content: "Seite wartet auf Korrektur";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageWaitingRelease"]::after {
+    content: "Seite wartet auf Freigabe";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemContentClass"]::after {
+    content: "Content-Klasse";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemContentClassMasterpage"]::after {
+    content: "Content-Klasse (Masterpage)";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemAnchor"]::after {
+    content: "Anchor";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemContainer"]::after {
+    content: "Container";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemList"]::after {
+    content: "Liste";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemUnknown"]::after {
+    content: "Unbekannt";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */

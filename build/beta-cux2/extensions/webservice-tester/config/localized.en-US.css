@@ -1,0 +1,31 @@
+/* ----- ----- ----- ----- ----- ----- ----- -----
+   Package release 16.0.0.1207
+   File UUID: 1262359b-f367-4f26-a53b-8ba87cd715ae
+   ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="en-US"] [data-localized-extension="label-name"]>.name::before {
+    content: "Webservice tester";
+}
+
+[lang-extension="en-US"] [data-localized-extension="label-name"]>.name>sup::after {
+    content: "(beta)";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="en-US"] [data-localized-extension="text-id-001"]::after {
+    content: "Please check browser console for more information (F12).";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="en-US"] [data-localized-extension="tab-id-001"]::after {
+    content: "Home";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tab-id-002"]::after {
+    content: "Connector Object";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tab-id-003"]::after {
+    content: "General";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */

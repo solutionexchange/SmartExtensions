@@ -1,0 +1,69 @@
+/* ----- ----- ----- ----- ----- ----- ----- -----
+   Package release {build-release}
+   File UUID: c3d9c628-c1d9-4bdf-80e8-5141e46acb82
+   ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="label-name"]>.name::before {
+    content: "Erweiterungspaket-Manager";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-name"]>.name>sup::after {
+    content: "(beta)";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="label-cardExtensionsInstalled"]::after {
+    content: "Installiert";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-cardExtensionsAvailable"]::after {
+    content: "Verfügbar";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-cardPackage"]::after {
+    content: "Informationen zum Paket";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="label-buttonPackageUpdate"]::after {
+    content: "Erweiterungen aktualisieren";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-buttonExtensionImport"]::after {
+    content: "Import";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="label-tablePackageConfigured"]::after {
+    content: "Konfiguriert";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-tablePackageInstalled"]::after {
+    content: "Installiert";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-tablePackageAvailable"]::after {
+    content: "Verfügbar";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-tablePackageInformationName"]::after {
+    content: "Name";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-tablePackageInformationRelease"]::after {
+    content: "Release";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-tablePackageInformationCreation"]::after {
+    content: "Erstellt am";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-tablePackageInformationCompatibility"]::after {
+    content: "Kompatibilität";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension=""]::after {
+    content: "";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */

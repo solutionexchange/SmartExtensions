@@ -1,0 +1,17 @@
+/* ----- ----- ----- ----- ----- ----- ----- -----
+   Package release {build-release}
+   File UUID: 69032905-b8aa-4866-bdf4-752ff126a15e
+   ----- ----- ----- ----- ----- ----- ----- ----- */
+#listExtensionsInstalled .btn,
+#listExtensionsAvailable .btn {
+    width: 50px;
+}
+
+#listExtensionsInstalled>.notify .no-data,
+#listExtensionsAvailable>.notify .no-data,
+#listPackageConfigured>.notify .no-data,
+#listPackageInstalled>.notify .no-data {
+    display: none;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */

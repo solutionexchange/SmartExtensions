@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+    Package release {build-release}
+    File UUID: 97e84110-24ba-4543-8723-a75246f43feb
+-->
+<html>
+
+<head>
+    <title>Package ({build-package}) : Publishing Manager</title>
+    <meta uuid="c6ecc1d0-83b8-4928-9071-d1d4ab779ab8" />
+    <meta file-uuid="97e84110-24ba-4543-8723-a75246f43feb" />
+    <meta version="{build-release}" />
+    <!-- Build-Include: head-meta -->
+    <!-- Build-Include: head-favicon -->
+    <!-- Build-Include: head-stylesheet-libraries-basics -->
+    <!-- Stylesheet: Libraries Extension (additionally for this extension) -->
+    <!-- Build-Include: head-stylesheet-core-basics -->
+    <!-- Build-Include: head-stylesheet-theme-opentext-cux2-extension -->
+    <!-- Build-Include: head-script-libraries-basics -->
+    <!-- Build-Include: head-script-libraries-moment -->
+    <!-- Scripts: Libraries Extension (additionally for this extension) -->
+    <script src="../../libraries/clipboardjs/{build-library-clipboardjs-release}/clipboard.min.js?release={build-library-clipboardjs-release}"></script>
+    <!-- Build-Include: head-script-controller-basics -->
+    <!-- Build-Include: head-script-core-basics -->
+    <!-- Scripts: Core OADate (requries Moment) -->
+    <script src="../../global/js/functions.oadate.js?release={build-release}"></script>
+    <!-- Scripts: Extension Basics -->
+    <script src="js/functions.extension.js?release={build-release}"></script>
+</head>
+
+<body>
+    <!-- Build-Include: body-loading -->
+    <!-- Build-Include: body-no-support-ie -->
+    <!-- Dialog: Main -->
+    <div class="container fade" id="idMainDialog">
+        <!-- Build-Include: dialog-head-label-controls -->
+        <!-- Dialog: Body -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        <span data-localized-extension="label-card"></span>
+                    </div>
+                    <div class="card-body height-default overflow-y-scroll">
+                        <div class="loading" data-localized-core="text-loading">
+                            <i class="fas fa-sync fa-spin text-danger"></i>&nbsp;&nbsp;
+                        </div>
+                        <div class="no-data" data-localized-core="text-noData">
+                            <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- Dialog: Footer -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-body pt-2 pb-2 d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-copySelection'></span>" id="copySelection">
+                            <i class="far fa-clone"></i>
+                        </button>
+                        <span>&nbsp;&nbsp;</span>
+                        <div class="btn-group" role="group" aria-label="controlsDefault">
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-resetSelection'></span>" id="resetSelection">
+                                <i class="fas fa-eraser"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-reloadAll'></span>" id="reloadAll">
+                                <i class="fas fa-sync fa-spin text-danger"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+    </div>
+    <!-- Build-Include: modal-loading -->
+    <!-- Build-Include: modal-about -->
+    <!-- Build-Include: modal-processing -->
+    <!-- Templates: Handlebars -->
+    <script id="template-itemXXX" type="text/x-handlebars-template">
+    </script>
+</body>
+
+</html>

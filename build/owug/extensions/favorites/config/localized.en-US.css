@@ -1,0 +1,121 @@
+/* ----- ----- ----- ----- ----- ----- ----- -----
+   Package release 16.0.0.1207
+   File UUID: 7ded625b-673e-4e6b-b8a4-37d1c7a2d226
+   ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="en-US"] [data-localized-extension="label-name"]>.name::before {
+    content: "Favorites";
+}
+
+[lang-extension="en-US"] [data-localized-extension="label-name"]>.name>sup::after {
+    content: "(beta)";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="en-US"] [data-localized-extension="label-card"]::before {
+    content: "Overview";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="en-US"] [data-localized-extension="label-tabPages"]::before {
+    content: "Pages";
+}
+
+[lang-extension="en-US"] [data-localized-extension="label-tabLinks"]::before {
+    content: "Links";
+}
+
+[lang-extension="en-US"] [data-localized-extension="label-tabContentClasses"]::before {
+    content: "Content Classes";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="en-US"] [data-localized-extension="text-noData-forPages"]::after {
+    content: "No data available!";
+}
+
+[lang-extension="en-US"] [data-localized-extension="text-noData-forLinks"]::after {
+    content: "No data available!";
+}
+
+[lang-extension="en-US"] [data-localized-extension="text-noData-forContentClasses"]::after {
+    content: "No data available!";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPage"]::after {
+    content: "Page";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageNew"]::after {
+    content: "Page new";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageChanged"]::after {
+    content: "Page changed";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageDraft"]::after {
+    content: "Page draft";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageReleased"]::after {
+    content: "Page released";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageKeyword"]::after {
+    content: "Page with keywords";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageNotAvailable"]::after {
+    content: "Page not available";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageNeverReleased"]::after {
+    content: "Page never released";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageDeletedRecyle"]::after {
+    content: "Page deleted (reycle bin)";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageArchived"]::after {
+    content: "Page archived";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageRemovedCompletly"]::after {
+    content: "Page remove completly";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageWaitingCorrection"]::after {
+    content: "Page waiting for correction";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemPageWaitingRelease"]::after {
+    content: "Page waiting for release";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemContentClass"]::after {
+    content: "Content-Class";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemContentClassMasterpage"]::after {
+    content: "Content-Class (Masterpage)";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemAnchor"]::after {
+    content: "Anchor";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemContainer"]::after {
+    content: "Container";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemList"]::after {
+    content: "List";
+}
+
+[lang-extension="en-US"] [data-localized-extension="tooltip-template-itemUnknown"]::after {
+    content: "Unknown";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */

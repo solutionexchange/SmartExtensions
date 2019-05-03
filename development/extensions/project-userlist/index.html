@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+    Package release {build-release}
+    File UUID: f7d37c85-fed6-411a-a6c6-17603a0fcb56
+-->
+<html>
+
+<head>
+    <title>Package ({build-package}) : Project Userlist</title>
+    <meta uuid="8e971e84-c374-44f8-9d0d-efdb5ad405fc" />
+    <meta file-uuid="f7d37c85-fed6-411a-a6c6-17603a0fcb56" />
+    <meta version="{build-release}" />
+    <!-- Build-Include: head-meta -->
+    <!-- Build-Include: head-favicon -->
+    <!-- Build-Include: head-stylesheet-libraries-basics -->
+    <!-- Build-Include: head-stylesheet-core-basics -->
+    <!-- Build-Include: head-stylesheet-theme-opentext-cux2-extension -->
+    <!-- Build-Include: head-script-libraries-basics -->
+    <!-- Build-Include: head-script-libraries-moment -->
+    <!-- Scripts: Libraries Extension (additionally for this extension) -->
+    <script src="../../libraries/clipboardjs/{build-library-clipboardjs-release}/clipboard.min.js?release={build-library-clipboardjs-release}"></script>
+    <!-- Build-Include: head-script-controller-basics -->
+    <!-- Scripts: RQL-Connector Extension (additionally for this extension) -->
+    <script src="../../components/libraries/rql.connector.functions.users.project-specific.js?release={build-release}"></script>
+    <!-- Build-Include: head-script-core-basics -->
+    <!-- Scripts: Core OADate (requries Moment) -->
+    <script src="../../global/js/functions.oadate.js?release={build-release}"></script>
+    <!-- Scripts: Extension Basics -->
+    <script src="js/functions.extension.js?release={build-release}"></script>
+</head>
+
+<body>
+    <!-- Build-Include: body-loading -->
+    <!-- Build-Include: body-no-support-ie -->
+    <!-- Dialog: Main -->
+    <div class="container fade" id="idMainDialog">
+        <!-- Build-Include: dialog-head-label-controls -->
+        <!-- Dialog: Body -->
+        <div class="row">
+            <div class="col-8">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        <span data-localized-extension="label-cardActiveUsers">
+                            <span id="badgesProjectUsers" class="float-right">
+                                <span class="cursor-default badge badge-warning">0</span>
+                                <span class="cursor-default badge badge-danger">0</span>
+                                <span class="cursor-default badge badge-secondary">0</span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="card-body height-default overflow-y-scroll">
+                        <span id="notifyProjectUsers">
+                            <div class="loading" data-localized-core="text-loading">
+                                <div class="spinner-grow text-danger spinner-grow-sm" role="status"></div>&nbsp;&nbsp;
+                            </div>
+                            <div class="no-data" data-localized-core="text-noData">
+                                <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                            </div>
+                        </span>
+                        <table class="table table-sm">
+                            <tbody id="listProjectUsers">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        <span data-localized-extension="label-cardNotification"></span>
+                    </div>
+                    <div class="card-body height-default">
+                        <form>
+                            <div class="form-group">
+                                <label for="emailSubject" data-localized-core="label-forSubject"></label>
+                                <input class="form-control" id="emailSubject" type="text" value="" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailBody" data-localized-core="label-forMessage"></label>
+                                <textarea class="form-control" id="emailBody" rows="14" disabled></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- Dialog: Footer -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-body pt-2 pb-2 d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary" data-clipboard-text="No Data" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-copySelection'></span>" id="copySelection" disabled>
+                            <i class="far fa-clone"></i>
+                        </button>
+                        <span>&nbsp;&nbsp;</span>
+                        <div class="btn-group" role="group" aria-label="controlsDefault">
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-resetSelection'></span>" id="resetSelection" disabled>
+                                <i class="fas fa-eraser"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-reloadAll'></span>" id="reloadAll" disabled>
+                                <i class="fas fa-sync fa-spin text-danger"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+    </div>
+    <!-- Build-Include: modal-loading -->
+    <!-- Build-Include: modal-about -->
+    <!-- Build-Include: modal-processing -->
+    <!-- Templates: Handlebars -->
+    <script id="template-itemProjectUser" type="text/x-handlebars-template">
+        <tr class="cursor-pointer itemProjectUser" data-name="{{Name}}" data-guid="{{Guid}}" data-type="user" data-email="{{EMail}}" data-dialoglanguageid="{{DialogLanguageId}}">
+            <td class="text-center align-middle" style="width: 40px; height: 60px;" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<span data-localized-extension='tooltip-template-itemUser{{LoginDateClass}}'></span>">
+                <h4 style="padding-top: 5px;">
+                    <i class="cursor-help fas fa-user text-{{LoginDateColor}}"></i>
+                </h4>
+            </td>
+            <td class="text-left">
+                {{Name}}
+                <br />
+                <small class="text-secondary font-weight-light">{{FullName}}, {{DialogLanguageId}}, {{Id}}</small>
+            </td>
+            <td class="text-right">
+                <small>
+                    <span class="text-{{LoginDateColor}}">{{LoginDate}}</span>
+                    <br />{{EMail}}
+                </small>
+            </td>
+            <td class="text-center align-middle" style="width: 30px; height: 60px;">
+                <i class="cursor-help fas fa-info-circle text-primary" data-toggle="tooltip" data-placement="left" data-title="{{Guid}}"></i>
+            </td>
+        </tr>
+    </script>
+</body>
+
+</html>

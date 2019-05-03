@@ -1,0 +1,254 @@
+
+547a762f-7aa1-466f-9501-99e2089562e7	(Extension UUID) RQL-Connector
+3fbb38e2-b314-4612-9377-db8d2ebc8e8a	\rql-connector\16.0\connector\rql.connector.core.js
+c8d0c666-5f21-4861-bc88-08d75f22949f	\rql-connector\16.0\connector\rql.connector.environment.aspx
+825b9786-63a9-495b-8fcd-31ae4f993491	\rql-connector\16.0\connector\rql.connector.keepalive.asp
+267e6450-b400-427a-bc05-a11addd49eb5	\rql-connector\16.0\connector\rql.connector.proxy.aspx
+b6ac0696-1a3c-4d82-b01f-f51c5c13219b	\rql-connector\16.0\connector\rql.connector.session.asp
+a09da92e-dfb4-42d1-9355-14e8c97d38ee	\rql-connector\16.0\functions\rql.connector.functions.asynchronous.processes.js
+54dcf4d1-d00d-4e28-965f-3616b9c67a20	\rql-connector\16.0\functions\rql.connector.functions.clipboard.js
+df00c97d-3edf-43eb-9149-8b2b54bb259d	\rql-connector\16.0\functions\rql.connector.functions.content.elementdata.js
+2f4cac10-efe5-4883-942e-0381ede3c977	\rql-connector\16.0\functions\rql.connector.functions.content.pages.js
+f976c388-8089-420f-93a7-a079c2c25850	\rql-connector\16.0\functions\rql.connector.functions.contentclasses.general.js
+d04fbfef-f4d0-4b4a-9153-debd7c5d89f6	\rql-connector\16.0\functions\rql.connector.functions.conversion.js
+a8fcb92c-d559-4bf9-a700-f213e1c3b654	\rql-connector\16.0\functions\rql.connector.functions.favorites.js
+8fdcda28-6154-4740-a47d-3ae51a974b40	\rql-connector\16.0\functions\rql.connector.functions.general.js
+78deefc1-3912-4b3e-9159-114b73976dc2	\rql-connector\16.0\functions\rql.connector.functions.plugins.js
+491aa011-8f69-4f40-82bc-e2358a4b092d	\rql-connector\16.0\functions\rql.connector.functions.projects.projectvariants.js
+2277ca1f-4dcf-4682-9d48-2966e0f1d701	\rql-connector\16.0\functions\rql.connector.functions.publication.js
+4b2ef734-b796-407d-98e9-b5e5ed312cae	\rql-connector\16.0\functions\rql.connector.functions.server.js
+3a7fea7f-a0a7-4d68-a2ee-2e3a956fd4ed	\rql-connector\16.0\functions\rql.connector.functions.users.project-specific.js
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+4976e5c7-6e58-47d0-a944-2b1b59b1c8bf	\core\js\functions.core.js
+bbf931c5-43bf-442b-bf9a-916e0eed411b	\core\js\functions.oadate.js
+13580c28-326b-4cc6-b294-08f37f2ae7c7	\core\js\functions.opentext.js
+0c8ad6fe-91bf-4796-aa31-2bac266706a1	\core\css\styles.core.css
+605a773d-e5a0-4509-a8f1-1c10d4d60817	\core\css\theme.opentext-cux2.css
+5c2a31c5-f9a0-4de1-9a78-5fd1e7eee56c	\core\config\localized.de-DE.css
+379b5ed1-3581-4fd9-b12d-d1f789d89357	\core\config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+304ed51e-eac3-4754-9857-f475e26aa7f6	(Extension UUID) Cache Monitor
+a71c6a88-6dd0-495f-a27c-9164f46dfa02	\cache-monitor\index.html
+c43f809a-af41-41c1-8a85-7df413d93ab1	\cache-montior\js\functions.extension.js
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+5ea4af4e-0b66-434a-8cca-791ec4ac9aa3	(Extension UUID) Cluster Log Viewer
+1a995e00-64bc-45eb-b615-bc90d61e8505	\cluster-log-viewer\index.html
+2840b743-b700-470b-b828-32f8a7bf9ce9	\cluster-log-viewer\js\functions.extension.js
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+c37fb7e0-bd3e-4c5b-bcb9-7c6d6bef6fcc	(Extension UUID) Config File Viewer
+323224e3-9fd2-4dd2-9875-7d4a72d3f62c	\config-file-viewer\index.html
+d457553f-e303-4919-9fdd-95a4fb515ef7	\config-file-viewer\js\functions.extension.js
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+7c24b243-7bf2-42b2-9191-7b1609865aba	(Extension UUID) Clipboard sharing
+36ea9c3e-b89b-4124-85f8-bc00e40e9dd3	\clipboard-sharing\index.html
+a02a10dc-8aa6-49b7-9a3f-c7946d16762e	\clipboard-sharing\js\functions.extension.js
+343eb779-8c7b-41f1-aa38-9eb1d6ab7468	\clipboard-sharing\config\localized.de-DE.css
+19ee4632-1105-43c4-a827-7da6b2f80e1f	\clipboard-sharing\config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+3a03b13d-2f8e-42c5-900b-95982d54665a	(Extension UUID) Copy Metadata
+e242df5a-05f7-411a-a6e3-4a961f7620a9	\copy-metadata\index.html
+28164a4c-6067-45ee-981e-e049b4a17aa9	\copy-metadata\js\functions.extension.js
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+029fc02a-dd75-4f17-88e4-575632b48c92	(Extension UUID) Delete by Clipboard
+8efbd97f-abd2-40c7-b395-dca050f41697	\delete-by-clipboard\index.html
+510263e0-e05b-40a6-bfcb-ea055b31b559	\delete-by-clipboard\js\functions.extension.js
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+7355dc0d-b47e-4c65-8f55-c18326ab74dc	(Extension UUID) Extension Package Manager
+46f06a2a-1ba5-47e1-9ee8-b563b0f70a8a	\Extension-package-manager\index.html
+943880fa-e867-474a-a78b-bd64cac21020	\Extension-package-manager\js\functions.extension.js
+69032905-b8aa-4866-bdf4-752ff126a15e	\Extension-package-manager\css\styles.extension.css
+c3d9c628-c1d9-4bdf-80e8-5141e46acb82	\Extension-package-manager\config\localized.de-DE.css
+3711da62-c277-4ff7-a449-b17edaa2fd28	\Extension-package-manager\config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+70d3587a-8c34-49a6-9069-36b11e0ae3ab	(Extension UUID) Extension Template
+e798704d-10d6-4f7e-87fe-002d507585b3	\extension-template\index.html
+7e7e3c32-2806-42b2-a178-e5a2daf4e015	\extension-template\js\functions.extension.js
+d7b623be-2131-46b2-b2e8-aa7564be7094	\extension-template\config\localized.de-DE.css
+cf204b18-32cf-45da-820f-b8942cb14b9f	\extension-template\config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+730367dc-fb01-48c1-9874-850bfd36aaa3	(Extension UUID) Favorites
+31d9d507-a44f-4a4e-acc2-4df53c46c110	\favorites\index.html
+03e99174-1dd7-4b18-b2c3-e2d7a472fbc0	\favorites\js\functions.extension.js
+3bf58dd3-7e2d-4723-ace0-12961ed7acd3	\favorites\config\localized.de-DE.css
+7ded625b-673e-4e6b-b8a4-37d1c7a2d226	\favorites\config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+7a1cc7c7-7c72-4ef2-a19d-bcd5669051c3	(Extension UUID) Favorites Manager
+5d0dfbaf-c312-423f-94ca-78d6e4453f7e	\favorites-manager\index.html
+6ba06c05-9093-4002-872a-a1fc17f39e99	\favorites-manager\js\functions.extension.js
+c762a5bd-8801-4ea3-aea1-020a98ee41cf	\favorites-manager\config\localized.de-DE.css
+f200ad08-e034-4b5a-b6da-4e1feea70984	\favorites-manager\config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+8e971e84-c374-44f8-9d0d-efdb5ad405fc	(Extension UUID) Project Userlist
+f7d37c85-fed6-411a-a6c6-17603a0fcb56	\project-userlist\index.html
+130e171e-372a-4ab9-9e53-291b9381d8d5	\project-userlist\js\functions.extension.js
+1637e2e9-c5a1-4c45-aa66-7caf9f97c0ae	\project-userlist\config\localized.de-DE.css
+e4529f40-e7b8-4bd7-bbe9-2ca63c512c88	\project-userlist\config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+80d21e7f-cb50-4585-bb79-27fb7f2ef0dc	(Extension UUID) Publish by Clipboard
+c0d4d0b3-2b60-49c4-b313-cc895988eadd	\publish-by-clipboard\index.html
+e75d0480-3b5b-4b8e-afb3-fda4a0d8b08d	\publish-by-clipboard\js\functions.extension.js
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+c6ecc1d0-83b8-4928-9071-d1d4ab779ab8	(Extension UUID) Publishing Manager
+97e84110-24ba-4543-8723-a75246f43feb	\publishing-manager\index.html
+988a73fe-8b2c-4dad-8745-466ae50a9783	\publishing-manager\js\functions.extension.js
+b3098f0e-0083-47c7-a601-463566eddcfb	\publishing-manager\config\localized.de-DE.css
+113ccca9-a005-4d3b-9fdf-9556a9dcedc8	\publishing-manager\config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+aea16ded-3478-42c4-9678-66cb9ebe025c	(Extension UUID) WebService Tester
+3c06260b-174e-40ac-80ca-487f59b385e8	\webservice-tester\index.html
+6113686f-47af-44d2-a34b-fa24ba2534fc	\webservice-tester\js\functions.extension.js
+059b9fc1-a347-41da-8971-9bf0c768a5c4	\webservice-tester\config\localized.de-DE.css
+1262359b-f367-4f26-a53b-8ba87cd715ae	\webservice-tester\config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+19ef8402-aa99-4c10-a026-fb3f0f9d1d44	.\Start-BuildProcess.ps1
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+1bc7b5cb-f1d3-4e53-944b-175362cd8ae8    (Embeded UUID) SmartEdit Tester
+46c209e2-3daa-4569-ab92-73de627b2000	\index.html
+a43d2300-e543-4f35-afe4-eda9feddaf8a    \js\functions.embeded.js
+b1565fd5-1e80-4335-88f2-d9dfad08c8b4    \config\localized.de-DE.css
+90fb4dbf-d73d-4353-a27b-25fa974171b2    \config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+33605704-8c65-47fb-91fd-46c2e302ce52
+7c7d9e6d-f1a1-4803-b6df-b35a3f569587
+b2a0769e-6bee-4fff-ad20-f998ddab0990
+8df00fa7-67d2-4fcd-aa9b-f5395eed6a40
+68fd48ba-e720-40a4-b72a-e589815bbd70
+52c463c2-e51c-4db7-9dbb-68e2544e29ca
+7498087a-54c8-438c-922a-1da832ee4a76
+49fdeb8a-d1c6-43a9-93ad-d3f29ca85bc8
+0dd4dd9a-3636-4ff5-bda9-6d4e36d5e90c
+aa3758c0-092b-409a-a0d5-91f581694220
+bed8c177-756f-4777-bc09-098453927fd8
+823effa9-bc80-43fe-94ab-8fdc9bcee82e
+201a1422-4eef-41f0-b3d6-4f3973f28f9b
+54cb6349-c05b-4458-936f-a89ea9e7e390
+80e6a0d0-b179-40f6-9e22-ce478e99e201
+2b67db1a-1919-4887-af7a-2c5743092b44
+0fab330f-db84-4417-86cf-0dca89e95334
+ddfcf427-b6e0-4502-a22a-ba96162f26df
+28aee3e7-bc14-497c-b773-33466db8719c
+80f94a2d-4a6d-46f7-a5aa-ac9602d1aed5
+1f1242b7-5877-45f0-9781-904a8ee68cd2
+1fc31c27-927e-4646-856d-9d7c50fc22f6
+6a2c56e3-0d60-49af-b3ba-c52c6ebb3981
+cc77aeb2-63fb-4d86-ad1b-2946e8cc9195
+9e7adcd3-3341-49f9-aa26-243cb797f35b
+3ee5d7f0-c1ba-46d9-b5ee-ec18094d1b79
+5dc6c433-1628-4c52-9d6e-b8a099c217ac
+e2208ee3-22bc-4a1a-a778-c6a9ced34380
+7c147432-6709-4d81-8f1c-b28d24864eb6
+a9b17632-5a3d-48c2-894d-f7a7b2488765
+c0274c21-4ac6-4622-a35e-c0325106ecd8
+2101f85d-6dc0-458e-9d32-c1616f468d3e
+70190209-db32-453e-889d-d42aa59fafbc
+45c2b8a2-efaa-4080-943c-28f46055d44f
+c88589c5-b52e-4ccf-b819-bdcc6b8d8a8a
+b773b389-f978-44a8-adff-dc838262b006
+4456699e-6a05-473a-8ae1-2f7e0f084d60
+3a95cace-f6f2-47c9-a6e7-ff8e64f5cfeb
+4b71e5dc-4872-4ef9-979f-30abdcdab5c3
+20dc5e64-18c1-47b9-8482-5ff7ad41bbd5
+939d281a-b123-47a6-b891-9adc714195c4
+c724e8e0-d9fb-43de-b59a-dfdafa476db7
+94bf231d-19c1-4e83-a88e-5ca5f5c822e1
+503f3078-fd17-438e-9695-e95df228f5ef
+81492bdc-7a61-484d-a62b-0e6250488487
+76e63560-d73f-4c0d-baaf-72bb04fe77be
+16dbecec-915d-43d1-adda-5f9cee82f202
+44aa1734-a234-4630-b5a9-1e74720cc222
+f44c0069-9cee-4d96-8ceb-4477247041ce
+3389bbff-ca4a-4b89-93ed-2a06a4dac87c
+ac4dd099-c5c8-4ebe-8c74-6645e03b85c4
+051404b6-47ba-451a-a8d7-3fecc585b98f
+4226959e-680e-4f3d-9e89-22eff8627894
+02568a28-0c53-4dc3-99ea-b507e88dcc76
+16a23d48-5a04-45cc-8931-9413d92e7137
+b516ae09-5c5c-4960-b767-948a869106ed
+4e34aa37-4bda-44a2-8e9d-96831e0212f4
+54cf9e03-8362-4344-b033-580ce717c3df
+7a8beccc-9ed7-4ef8-8334-07187771297d
+3255a069-09f8-4e2d-93e1-c785e3e0097d
+77fec857-e471-46f6-8810-8d831c94063e
+7d535ec7-dc7c-46c9-8375-6781a7ac0edf
+2ee5f62a-99db-4c12-a263-07badd4b5eef
+74929646-d303-482d-816c-4ab272597c63
+e04dbb0b-bbc9-422b-8345-6b53245aa307
+5262d8ea-ae4b-4102-9b9f-489e5ed22f60
+62364516-e3db-4ee6-b317-24d38403d673
+281ce04c-740a-400f-ab4f-dcc69421e6aa
+3c37c2f1-2b5b-49d1-bb30-38f4293cbd39
+c851b893-9050-4029-aa08-002e6e58d701
+afd77f21-2b3e-4fe2-8ad7-794578976be1
+82c82035-6ca3-4e6b-9690-eb48480c42f4
+5ba03e59-3d80-4204-ad31-8a25ff4bdf78
+5c54620c-5787-437a-a017-a2e58182895b
+fd62d11e-bbc6-4b20-b5c7-bf609a23720c
+196bb8b4-82e9-4986-b6fc-23e5238ccb59
+7f42bcb1-2c06-44f7-802d-248f65895955
+66e657d1-c603-4d6b-acc0-e3faee7411a4
+ab361794-5738-47e1-93cd-0fc7e81a14f2
+b9560eaf-13d7-4239-b06c-6c7f8d47664a
+a243bec1-3c6f-4bdd-b7ac-659496c6fb66
+e367331e-e2d8-45d1-b509-70cb992f51ac
+6ebf104f-d77d-4b79-a791-a58b2e159b65
+fad2f2d0-8518-45f7-83ec-273a594252c5
+ac351f5c-96fc-4fe3-b304-08f7e3dc6b0a
+9fdf5f5f-05d0-4d69-942f-e4e23a7b7280
+3409aed4-add8-491d-b565-106579356416
+519304b6-4ed2-4ec6-839b-299e1780b433
+6ef2761b-90db-47ac-b82c-f99b7907ae75
+33d55dce-7386-40c7-a85a-78b4f3966160
+be22a2b5-cc2f-431d-829d-07ee9e1b571d
+852a1ced-4eac-46f7-a648-6e447b3dd6c5
+3f6f2a35-379a-4f4a-887e-53d631af098d
+d9e54c92-ed81-4c81-a541-e61363568339
+36a7271d-5b84-4315-88f4-3f8df659af6a
+1c8ea773-a08e-4121-9b4f-5eea8203b985
+409f48eb-8426-48b5-a316-aa9c4b9854a3
+a4dc2147-1a8e-469a-bd20-3c4f773c2986
+d7cadd27-4cac-4c56-9d1d-604d5c38e996
+d59a26d2-eb6b-48da-aecd-093655cf96fc
+50c52303-6a22-4235-98cb-c7dfc338bf44
+877ad8ea-1f27-4812-af72-6e268210a454
+36faa761-f6f0-41d8-9fc4-3e999d7fc69b
+4b07b398-51f5-4cf5-9c0f-4ac64532a308
+a4e92e75-41e1-47a8-97e5-50210195d9fa
+18706c6d-4af3-4a36-a562-b529b12e243d
+636fd973-c832-4916-9f03-8e3b2c7d5f68
+caaa9cbf-5531-48c1-8383-f0649a315de1

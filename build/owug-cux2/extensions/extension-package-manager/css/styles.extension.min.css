@@ -1,0 +1,1 @@
+#listExtensionsAvailable .btn,#listExtensionsInstalled .btn{width:50px}#listExtensionsAvailable>.notify .no-data,#listExtensionsInstalled>.notify .no-data,#listPackageConfigured>.notify .no-data,#listPackageInstalled>.notify .no-data{display:none}

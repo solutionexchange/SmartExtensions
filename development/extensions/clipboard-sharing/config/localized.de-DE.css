@@ -1,0 +1,132 @@
+/* ----- ----- ----- ----- ----- ----- ----- -----
+   Package release {build-release}
+   File UUID: 343eb779-8c7b-41f1-aa38-9eb1d6ab7468
+   ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="label-name"]>.name::before {
+    content: "Ablage teilen";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-name"]>.name>sup::after {
+    content: "(beta)";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="label-cardClipboard"]::before {
+    content: "Ablage";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-cardActiveUsers"]::before {
+    content: "Aktive Benutzer";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="label-cardNotification"]::before {
+    content: "Benachrichtigung";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="text-loading-forClipboard"]::after {
+    content: "Daten werden ermittelt.";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="text-noData-forClipboard"]::after {
+    content: "Keine Daten vorhanden!";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="text-loading-forActiveUsers"]::after {
+    content: "Daten werden ermittelt.";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="text-noData-forActiveUsers"]::after {
+    content: "Keine Daten vorhanden!";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-forActive"]::after {
+    content: "Aktiv";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-forMaybeAway"]::after {
+    content: "Vielleicht weg";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-forMaybeOffline"]::after {
+    content: "Vielleicht offline";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPage"]::after {
+    content: "Seite";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageNew"]::after {
+    content: "Seite neu";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageChanged"]::after {
+    content: "Seite geändert";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageDraft"]::after {
+    content: "Seitenentwurf";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageReleased"]::after {
+    content: "Seite veröffentlicht";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageKeyword"]::after {
+    content: "Seite mit Schlagworten";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageNotAvailable"]::after {
+    content: "Seite nicht verfügbar";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageNeverReleased"]::after {
+    content: "Seite nie veröffentlicht";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageDeletedRecyle"]::after {
+    content: "Seite gelöscht (Papierkorb)";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageArchived"]::after {
+    content: "Seite archiviert";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageRemovedCompletly"]::after {
+    content: "Seite komplett entfernen";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageWaitingCorrection"]::after {
+    content: "Seite wartet auf Korrektur";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemPageWaitingRelease"]::after {
+    content: "Seite wartet auf Freigabe";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemContentClass"]::after {
+    content: "Content-Klasse";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemContentClassMasterpage"]::after {
+    content: "Content-Klasse (Masterpage)";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemAnchor"]::after {
+    content: "Anchor";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemContainer"]::after {
+    content: "Container";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemList"]::after {
+    content: "Liste";
+}
+
+[lang-extension="de-DE"] [data-localized-extension="tooltip-template-itemUnknown"]::after {
+    content: "Unbekannt";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */

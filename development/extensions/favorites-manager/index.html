@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--
+    Package release {build-release}
+    File UUID: 5d0dfbaf-c312-423f-94ca-78d6e4453f7e
+-->
+<html>
+
+<head>
+    <title>Package ({build-package}) : Favorites Manager</title>
+    <meta uuid="7a1cc7c7-7c72-4ef2-a19d-bcd5669051c3" />
+    <meta file-uuid="5d0dfbaf-c312-423f-94ca-78d6e4453f7e" />
+    <meta version="{build-release}" />
+    <!-- Build-Include: head-meta -->
+    <!-- Build-Include: head-favicon -->
+    <!-- Build-Include: head-stylesheet-libraries-basics -->
+    <!-- Stylesheet: Libraries Extension (additionally for this extension) -->
+    <link rel="stylesheet" href="../../libraries/jquery/plugins/scrolling-tabs/{build-library-jqueryscrollingtabs-release}/dist/jquery.scrolling-tabs.min.css?release={build-library-jqueryscrollingtabs-release}" />
+    <!-- Build-Include: head-stylesheet-core-basics -->
+    <!-- Build-Include: head-stylesheet-theme-opentext-cux2-extension -->
+    <!-- Build-Include: head-script-libraries-basics -->
+    <!-- Scripts: Libraries Extension (additionally for this extension) -->
+    <script src="../../libraries/jquery/plugins/scrolling-tabs/{build-library-jqueryscrollingtabs-release}/dist/jquery.scrolling-tabs.min.js?release={build-library-jqueryscrollingtabs-release}"></script>
+    <!-- Build-Include: head-script-controller-basics -->
+    <!-- Scripts: RQL-Connector Extension (additionally for this extension) -->
+    <script src="../../components/libraries/rql.connector.functions.clipboard.js?release={build-release}"></script>
+    <script src="../../components/libraries/rql.connector.functions.favorites.js?release={build-release}"></script>
+    <script src="../../components/libraries/rql.connector.functions.content.pages.js?release={build-release}"></script>
+    <script src="../../components/libraries/rql.connector.functions.content.elementdata.js?release={build-release}"></script>
+    <script src="../../components/libraries/rql.connector.functions.contentclasses.general.js?release={build-release}"></script>
+    <!-- Build-Include: head-script-core-basics -->
+    <!-- Scripts: Core OpenText (UI Controls) -->
+    <script src="../../global/js/functions.opentext.js?release={build-release}"></script>
+    <!-- Scripts: Extension Basics -->
+    <script src="js/functions.extension.js?release={build-release}"></script>
+</head>
+
+<body>
+    <!-- Build-Include: body-loading -->
+    <!-- Build-Include: body-no-support-ie -->
+    <!-- Dialog: Main -->
+    <div class="container fade" id="idMainDialog">
+        <!-- Build-Include: dialog-head-label-controls -->
+        <!-- Dialog: Body -->
+        <div class="row">
+            <div class="col-6">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        <span data-localized-extension="label-cardFavorites"></span>
+                    </div>
+                    <div class="card-body height-default">
+                        <ul class="nav nav-tabs" id="tabFavorites" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link show active disabled" data-toggle="tab" role="tab" id="tabFavoritePages" aria-controls="tabContentFavoritePages" aria-selected="true" href="#tabContentFavoritePages" data-localized-extension="label-tabPages">&nbsp;&nbsp;
+                                    <span id="badgesFavoritePages">
+                                        <span class="cursor-default badge badge-success">0</span>
+                                        <span class="cursor-default badge badge-secondary">0</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" data-toggle="tab" role="tab" id="tabFavoriteLinks" aria-controls="tabContentFavoriteLinks" aria-selected="false" href="#tabContentFavoriteLinks" data-localized-extension="label-tabLinks">&nbsp;&nbsp;
+                                    <span id="badgesFavoriteLinks">
+                                        <span class="cursor-default badge badge-success">0</span>
+                                        <span class="cursor-default badge badge-secondary">0</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" data-toggle="tab" role="tab" id="tabFavoriteContentClasses" aria-controls="tabContentFavoriteContentClasses" aria-selected="false" href="#tabContentFavoriteContentClasses" data-localized-extension="label-tabContentClasses">&nbsp;&nbsp;
+                                    <span id="badgesFavoriteContentClasses">
+                                        <span class="cursor-default badge badge-success">0</span>
+                                        <span class="cursor-default badge badge-secondary">0</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <br />
+                        <div class="tab-content height-default-tabcontent" id="tabContentFavorites">
+                            <span id="notifyFavorites">
+                                <div class="loading" data-localized-extension="text-loading-forFavorites">
+                                    <div class="spinner-grow text-danger spinner-grow-sm" role="status"></div>&nbsp;&nbsp;
+                                </div>
+                            </span>
+                            <div class="tab-pane fade height-default-tabcontent overflow-y-scroll active show" role="tabpanel" aria-labelledby="tabFavoritePages" id="tabContentFavoritePages">
+                                <div class="no-data" data-localized-extension="text-noData-forFavoritesPages">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                </div>
+                                <table class="table table-sm" id="tableFavoritePages">
+                                    <tbody class="listFavorite">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade height-default-tabcontent overflow-y-scroll" role="tabpanel" aria-labelledby="tabFavoriteLinks" id="tabContentFavoriteLinks">
+                                <div class="no-data" data-localized-extension="text-noData-forFavoritesLinks">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                </div>
+                                <table class="table table-sm" id="tableFavoriteLinks">
+                                    <tbody class="listFavorite">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade height-default-tabcontent overflow-y-scroll" role="tabpanel" aria-labelledby="tabFavoriteContentClasses" id="tabContentFavoriteContentClasses">
+                                <div class="no-data" data-localized-extension="text-noData-forFavoritesContentClasses">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                </div>
+                                <table class="table table-sm" id="tableFavoriteContentClasses">
+                                    <tbody class="listFavorite">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="card shadow">
+                    <div class="card-body pt-2 pb-2">
+                        <!-- Dialog: Footer Left -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="d-flex justify-content-start">
+                                    <div class="btn-group" role="group" aria-label="controlsDefaultFavorites">
+                                        <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-reloadAll-fromFavorites'></span>" id="reloadAll-fromFavorites" disabled>
+                                            <i class="fas fa-sync fa-spin text-danger"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-resetSelection-fromFavorites'></span>" id="resetSelection-fromFavorites" disabled>
+                                            <i class="fas fa-eraser"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-selectAll-fromTabFavorites'></span>" id="selectAll-fromTabFavorites">
+                                            <i class="far fa-check-square"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-deleteSelection-fromFavorites'></span>" id="deleteSelection-fromFavorites" disabled>
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    &nbsp;
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-repairSelection-fromFavorites'></span>" id="repairSelection-fromFavorites" disabled>
+                                        <i class="fas fa-magic"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-lg-none mb-5"></div>
+                            <div class="col-lg-6">
+                                <div class="d-flex justify-content-end">
+                                    <div class="btn-group" role="group" aria-label="controlsActionFavorites">
+                                        <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-moveSelection-toClipboard'></span>" id="moveSelection-toClipboard" disabled>
+                                            <i class="fas fa-share-square"></i>&nbsp;
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-success" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-copySelection-toClipboard'></span>" id="copySelection-toClipboard" disabled>
+                                            <i class="fas fa-plus-square"></i>&nbsp;
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                    &nbsp;
+                                    <button type="button" class="btn btn-outline-danger" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-removeSelection-fromClipboard'></span>" id="removeSelection-fromClipboard" disabled>
+                                        <i class="fas fa-minus-square"></i>&nbsp;
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="col-6">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        <span data-localized-extension="label-cardClipboard"></span>
+                    </div>
+                    <div class="card-body height-default">
+                        <ul class="nav nav-tabs" id="tabClipboardData" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link show active disabled" data-toggle="tab" role="tab" id="tabClipboardDataPages" aria-controls="tabContentClipboardDataPages" aria-selected="true" href="#tabContentClipboardDataPages" data-localized-extension="label-tabPages">&nbsp;&nbsp;
+                                    <span id="badgesClipboardDataPages">
+                                        <span class="cursor-default badge badge-success">0</span>
+                                        <span class="cursor-default badge badge-secondary">0</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" data-toggle="tab" role="tab" id="tabClipboardDataLinks" aria-controls="tabContentClipboardDataLinks" aria-selected="false" href="#tabContentClipboardDataLinks" data-localized-extension="label-tabLinks">&nbsp;&nbsp;
+                                    <span id="badgesClipboardDataLinks">
+                                        <span class="cursor-default badge badge-success">0</span>
+                                        <span class="cursor-default badge badge-secondary">0</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" data-toggle="tab" role="tab" id="tabClipboardDataContentClasses" aria-controls="tabContentClipboardDataContentClasses" aria-selected="false" href="#tabContentClipboardDataContentClasses" data-localized-extension="label-tabContentClasses">&nbsp;&nbsp;
+                                    <span id="badgesClipboardDataContentClasses">
+                                        <span class="cursor-default badge badge-success">0</span>
+                                        <span class="cursor-default badge badge-secondary">0</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <br />
+                        <div class="tab-content height-default-tabcontent" id="tabContentClipboardData">
+                            <span id="notifyClipboardData">
+                                <div class="loading" data-localized-extension="text-loading-forClipboard">
+                                    <div class="spinner-grow text-danger spinner-grow-sm" role="status"></div>&nbsp;&nbsp;
+                                </div>
+                            </span>
+                            <div class="tab-pane fade height-default-tabcontent overflow-y-scroll active show" role="tabpanel" aria-labelledby="tabClipboardDataPages" id="tabContentClipboardDataPages">
+                                <div class="no-data" data-localized-extension="text-noData-forClipboardPages">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                </div>
+                                <table class="table table-sm" id="tableClipboardDataPages">
+                                    <tbody class="listClipboardData">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade height-default-tabcontent overflow-y-scroll" role="tabpanel" aria-labelledby="tabClipboardDataLinks" id="tabContentClipboardDataLinks">
+                                <div class="no-data" data-localized-extension="text-noData-forClipboardLinks">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                </div>
+                                <table class="table table-sm" id="tableClipboardDataLinks">
+                                    <tbody class="listClipboardData">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade height-default-tabcontent overflow-y-scroll" role="tabpanel" aria-labelledby="tabClipboardDataContentClasses" id="tabContentClipboardDataContentClasses">
+                                <div class="no-data" data-localized-extension="text-noData-forClipboardContentClasses">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                </div>
+                                <table class="table table-sm" id="tableClipboardDataContentClasses">
+                                    <tbody class="listClipboardData">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="card shadow">
+                    <div class="card-body pt-2 pb-2">
+                        <!-- Dialog: Footer Right -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="d-flex justify-content-start">
+                                    <button type="button" class="btn btn-outline-danger" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-removeSelection-fromFavorites'></span>" id="removeSelection-fromFavorites" disabled>
+                                        <i class="fas fa-chevron-left"></i>&nbsp;
+                                        <i class="fas fa-minus-square"></i>
+                                    </button>
+                                    &nbsp;
+                                    <div class="btn-group" role="group" aria-label="controlsActionClipboardData">
+                                        <button type="button" class="btn btn-outline-success" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-copySelection-toFavorites'></span>" id="copySelection-toFavorites" disabled>
+                                            <i class="fas fa-chevron-left"></i>&nbsp;
+                                            <i class="fas fa-plus-square"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-moveSelection-toFavorites'></span>" id="moveSelection-toFavorites" disabled>
+                                            <i class="fas fa-chevron-left"></i>&nbsp;
+                                            <i class="fas fa-share-square reverse"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-lg-none mb-5"></div>
+                            <div class="col-lg-6">
+                                <div class="d-flex justify-content-end">
+                                    <div class="btn-group" role="group" aria-label="controlsDefaultClipboardData">
+                                        <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-deleteSelection-fromClipboard'></span>" id="deleteSelection-fromClipboard" disabled>
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-selectAll-fromTabClipboard'></span>" id="selectAll-fromTabClipboard">
+                                            <i class="far fa-check-square"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-resetSelection-fromClipboard'></span>" id="resetSelection-fromClipboard" disabled>
+                                            <i class="fas fa-eraser"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-extension='tooltip-reloadAll-fromClipboard'></span>" id="reloadAll-fromClipboard" disabled>
+                                            <i class="fas fa-sync fa-spin text-danger"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+    </div>
+    <!-- Build-Include: modal-loading -->
+    <!-- Build-Include: modal-about -->
+    <!-- Build-Include: modal-processing -->
+    <!-- Templates: Handlebars -->
+    <script id="template-itemFavorite" type="text/x-handlebars-template">
+        <tr class="cursor-pointer itemFavorite {{Class}}" data-guid="{{Guid}}" data-elementguid="{{ElementGuid}}" data-type="{{Type}}" data-subtype="{{SubType}}" data-value="{{Value}}">
+            <td class="text-center align-middle" style="width: 40px; height: 50px;">
+                <h4 style="padding-top: 5px;">
+                    <i class="cursor-help {{Icon}} text-{{Color}}" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<span data-localized-extension='tooltip-template-item{{SubType}}'></span>"></i>
+                </h4>
+            </td>
+            <td class="text-left align-middle">
+                {{Value}}
+            </td>
+            <td class="text-center align-middle" style="width: 30px; height: 50px;">
+                <i class="cursor-help fas fa-info-circle text-primary" data-toggle="tooltip" data-placement="left" data-title="{{Guid}}"></i>
+            </td>
+        </tr>
+    </script>
+    <script id="template-itemClipboardData" type="text/x-handlebars-template">
+        <tr class="cursor-pointer itemClipboardData {{Class}}" data-guid="{{Guid}}" data-type="{{Type}}" data-subtype="{{SubType}}" data-elttype="{{EltType}}" data-headline="{{Headline}}">
+            <td class="text-left align-middle" style="width: 40px; height: 50px;">
+                <h4 style="padding-top: 5px;">
+                    <i class="cursor-help {{Icon}} text-{{Color}}" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<span data-localized-extension='tooltip-template-item{{SubType}}'></span>"></i>
+                </h4>
+            </td>
+            <td class="text-left align-middle">
+                {{Headline}}
+            </td>
+            <td class="text-center align-middle" style="width: 30px; height: 50px;">
+                <i class="cursor-help fas fa-info-circle text-primary" data-toggle="tooltip" data-placement="left" data-title="{{Guid}}"></i>
+            </td>
+        </tr>
+    </script>
+</body>
+
+</html>

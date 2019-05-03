@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+    Package release {build-release}
+    File UUID: 323224e3-9fd2-4dd2-9875-7d4a72d3f62c
+-->
+<html>
+
+<head>
+    <title>Package ({build-package}) : Config File Viewer</title>
+    <meta uuid="c37fb7e0-bd3e-4c5b-bcb9-7c6d6bef6fcc" />
+    <meta file-uuid="323224e3-9fd2-4dd2-9875-7d4a72d3f62c" />
+    <meta version="{build-release}" />
+    <!-- Build-Include: head-meta -->
+    <!-- Build-Include: head-favicon -->
+    <!-- Build-Include: head-stylesheet-libraries-basics -->
+    <!-- Stylesheet: Libraries Extension (additionally for this extension) -->
+    <link rel="stylesheet" href="../../libraries/gijgo/{build-library-gijgo-release}/css/gijgo.min.css?release={build-library-gijgo-release}" />
+    <!-- Build-Include: head-stylesheet-core-basics -->
+    <!-- Build-Include: head-stylesheet-theme-opentext-cux2-extension -->
+    <!-- Build-Include: head-script-libraries-basics -->
+    <!-- Build-Include: head-script-libraries-moment -->
+    <!-- Scripts: Libraries Extension (additionally for this extension) -->
+    <script src="../../libraries/gijgo/{build-library-gijgo-release}/js/gijgo.min.js?release={build-library-gijgo-release}"></script>
+    <script src="../../libraries/gijgo/{build-library-gijgo-release}/js/messages/messages.de-de.min.js?release={build-library-gijgo-release}"></script>
+    <!-- Build-Include: head-script-controller-basics -->
+    <!-- Scripts: RQL-Connector Extension (additionally for this extension) -->
+    <script src="../../components/libraries/rql.connector.functions.conversion.js?release={build-release}"></script>
+    <script src="../../components/libraries/rql.connector.functions.projects.projectvariants.js?release={build-release}"></script>
+    <!-- Build-Include: head-script-core-basics -->
+    <!-- Scripts: Core OADate (requries Moment) -->
+    <script src="../../global/js/functions.oadate.js?release={build-release}"></script>
+    <!-- Scripts: Extension Basics -->
+    <script src="js/functions.extension.js?release={build-release}"></script>
+</head>
+
+<body>
+    <!-- Build-Include: body-loading -->
+    <!-- Build-Include: body-no-support-ie -->
+    <!-- Dialog: Main -->
+    <div class="container fade" id="idMainDialog">
+        <!-- Build-Include: dialog-head-label-controls -->
+        <!-- Dialog: Body -->
+        <div class="row">
+            <div class="col-6">
+                <form>
+                    <div class="form-group">
+                        <textarea id="idOutput" class="form-control" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Build-Include: modal-loading -->
+    <!-- Build-Include: modal-about -->
+    <!-- Build-Include: modal-processing -->
+</body>
+
+</html>

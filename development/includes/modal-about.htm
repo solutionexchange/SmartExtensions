@@ -1,0 +1,52 @@
+<include>
+    <!-- Modal: About -->
+    <div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="modalAboutLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close remove-outline" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container p-1" id="contentAbout">
+                        <h4 data-localized-core="label-name">
+                            <img class="style-logo" src="config/extension.svg" />
+                            <span class="separator"></span>
+                            <span data-localized-extension="label-name">
+                                <span class="name">
+                                    <sup></sup>
+                                </span>
+                            </span>
+                            <span class="version">&nbsp;{build-release}</span>
+                        </h4>
+                        <br />
+                        <ul class="nav nav-tabs" id="tabAbout" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link show active" data-toggle="tab" role="tab" id="tabAbout" aria-controls="tabContentAbout" aria-selected="true" href="#tabContentAbout" data-localized-core="label-tabAbout"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" role="tab" id="tabContact" aria-controls="tabContentContact" aria-selected="false" href="#tabContentContact" data-localized-core="label-tabContact"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" role="tab" id="tabLibraries" aria-controls="tabContentLibraries" aria-selected="false" href="#tabContentLibraries" data-localized-core="label-tabLibraries"></a>
+                            </li>
+                        </ul>
+                        <br />
+                        <div class="tab-content height-default-tabcontent" id="tabContent">
+                            <div class="table tab-pane fade height-default-tabcontent overflow-y-scroll p-3 active show" role="tabpanel" aria-labelledby="tabAbout" id="tabContentAbout">
+                                &nbsp;
+                            </div>
+                            <div class="table tab-pane fade height-default-tabcontent overflow-y-scroll p-3" role="tabpanel" aria-labelledby="tabContact" id="tabContentContact">
+                                &nbsp;
+                            </div>
+                            <div class="table tab-pane fade height-default-tabcontent overflow-y-scroll p-3" role="tabpanel" aria-labelledby="tabLibraries" id="tabContentLibraries">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</include>

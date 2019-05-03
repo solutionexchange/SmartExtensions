@@ -1,0 +1,10 @@
+Bootstrap	= MIT
+jQuery		= MIT 
+Fontawesome	= MIT, SIL OFL and CC BY licenses (https://fontawesome.com/license/free)
+Handlebars.js	= MIT
+Clipboard.js	= MIT
+Gijgo		= MIT
+JS-Cookie	= MIT
+Normalize	= MIT
+Moment.js	= MIT
+lodash.js	= MIT

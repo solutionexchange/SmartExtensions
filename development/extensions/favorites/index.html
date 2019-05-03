@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+    Package release {build-release}
+    File UUID: 31d9d507-a44f-4a4e-acc2-4df53c46c110
+-->
+<html>
+
+<head>
+    <title>Package ({build-package}) : Favorites Overview</title>
+    <meta uuid="730367dc-fb01-48c1-9874-850bfd36aaa3" />
+    <meta file-uuid="31d9d507-a44f-4a4e-acc2-4df53c46c110" />
+    <meta version="{build-release}" />
+    <!-- Build-Include: head-meta -->
+    <!-- Build-Include: head-favicon -->
+    <!-- Build-Include: head-stylesheet-libraries-basics -->
+    <!-- Stylesheet: Libraries Extension (additionally for this extension) -->
+    <link rel="stylesheet" href="../../libraries/jquery/plugins/scrolling-tabs/{build-library-jqueryscrollingtabs-release}/dist/jquery.scrolling-tabs.min.css?release={build-library-jqueryscrollingtabs-release}" />
+    <!-- Build-Include: head-stylesheet-core-basics -->
+    <!-- Build-Include: head-stylesheet-theme-opentext-cux2-extension -->
+    <!-- Build-Include: head-script-libraries-basics -->
+    <!-- Scripts: Libraries Extension (additionally for this extension) -->
+    <script src="../../libraries/jquery/plugins/scrolling-tabs/{build-library-jqueryscrollingtabs-release}/dist/jquery.scrolling-tabs.min.js?release={build-library-jqueryscrollingtabs-release}"></script>
+    <!-- Build-Include: head-script-controller-basics -->
+    <!-- Scripts: RQL-Connector Extension (additionally for this extension) -->
+    <script src="../../components/libraries/rql.connector.functions.clipboard.js?release={build-release}"></script>
+    <script src="../../components/libraries/rql.connector.functions.favorites.js?release={build-release}"></script>
+    <!-- Build-Include: head-script-core-basics -->
+    <!-- Scripts: Core OpenText (UI Controls) -->
+    <script src="../../global/js/functions.opentext.js?release={build-release}"></script>
+    <!-- Scripts: Extension Basics -->
+    <script src="js/functions.extension.js?release={build-release}"></script>
+</head>
+
+<body>
+    <!-- Build-Include: body-loading -->
+    <!-- Build-Include: body-no-support-ie -->
+    <!-- Dialog: Main -->
+    <div class="container fade" id="idMainDialog">
+        <!-- Build-Include: dialog-head-label-controls -->
+        <!-- Dialog: Body -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        <span data-localized-extension="label-card"></span>
+                    </div>
+                    <div class="card-body height-default">
+                        <ul class="nav nav-tabs" id="tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link show active disabled" data-toggle="tab" role="tab" id="tabPages" aria-controls="tabContentPages" aria-selected="true" href="#tabContentPages" data-localized-extension="label-tabPages">&nbsp;&nbsp;
+                                    <span id="badgesPages">
+                                        <span class="cursor-default badge badge-success">0</span>
+                                        <span class="cursor-default badge badge-secondary">0</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" data-toggle="tab" role="tab" id="tabLinks" aria-controls="tabContentLinks" aria-selected="false" href="#tabContentLinks" data-localized-extension="label-tabLinks">&nbsp;&nbsp;
+                                    <span id="badgesLinks">
+                                        <span class="cursor-default badge badge-success">0</span>
+                                        <span class="cursor-default badge badge-secondary">0</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" data-toggle="tab" role="tab" id="tabContentClasses" aria-controls="tabContentContentClasses" aria-selected="false" href="#tabContentContentClasses" data-localized-extension="label-tabContentClasses">&nbsp;&nbsp;
+                                    <span id="badgesContentClasses">
+                                        <span class="cursor-default badge badge-success">0</span>
+                                        <span class="cursor-default badge badge-secondary">0</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <br />
+                        <div class="tab-content height-default-tabcontent" id="tabContent">
+                            <span id="notify">
+                                <div class="loading" data-localized-core="text-loading">
+                                    <div class="spinner-grow text-danger spinner-grow-sm" role="status"></div>&nbsp;&nbsp;
+                                </div>
+                            </span>
+                            <div class="tab-pane fade height-default-tabcontent overflow-y-scroll active show" role="tabpanel" aria-labelledby="tabPages" id="tabContentPages">
+                                <div class="no-data" data-localized-extension="text-noData-forPages">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                </div>
+                                <table class="table table-sm" id="tablePages">
+                                    <tbody class="list">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade height-default-tabcontent overflow-y-scroll" role="tabpanel" aria-labelledby="tabLinks" id="tabContentLinks">
+                                <div class="no-data" data-localized-extension="text-noData-forLinks">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                </div>
+                                <table class="table table-sm" id="tableLinks">
+                                    <tbody class="list">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade height-default-tabcontent overflow-y-scroll" role="tabpanel" aria-labelledby="tabContentClasses" id="tabContentContentClasses">
+                                <div class="no-data" data-localized-extension="text-noData-forContentClasses">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>&nbsp;&nbsp;
+                                </div>
+                                <table class="table table-sm" id="tableContentClasses">
+                                    <tbody class="list">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- Dialog: Footer -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-body pt-2 pb-2 d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-repairSelection'></span>" id="repairSelection" disabled>
+                            <i class="fas fa-magic"></i>
+                        </button>
+                        &nbsp;
+                        <div class="btn-group" role="group" aria-label="controlsDefault">
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-deleteSelection'></span>" id="deleteSelection" disabled>
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-selectAll'></span>" id="selectAll">
+                                <i class="far fa-check-square"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-resetSelection'></span>" id="resetSelection" disabled>
+                                <i class="fas fa-eraser"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-reloadAll'></span>" id="reloadAll" disabled>
+                                <i class="fas fa-sync fa-spin text-danger"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+    </div>
+    <!-- Build-Include: modal-loading -->
+    <!-- Build-Include: modal-about -->
+    <!-- Templates: Handlebars -->
+    <script id="template-item" type="text/x-handlebars-template">
+        <tr class="cursor-pointer item {{Class}}" data-guid="{{Guid}}" data-elementguid="{{ElementGuid}}" data-type="{{Type}}" data-subtype="{{SubType}}" data-value="{{Value}}">
+            <td class="text-left align-middle showInTree" style="width: 30px; height: 50px;">
+                <h6 style="padding-top: 10px;">
+                    <i class="cursor-pointer style-goto fas fa-share text-primary" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<span data-localized-core='tooltip-showInTree'></span>"></i>
+                </h6>
+            </td>
+            <td class="text-center align-middle" style="width: 40px; height: 50px;">
+                <h4 style="padding-top: 5px;">
+                    <i class="cursor-help {{Icon}} text-{{Color}}" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<span data-localized-extension='tooltip-template-item{{SubType}}'></span>"></i>
+                </h4>
+            </td>
+            <td class="forSelection align-middle">
+                {{Value}}
+            </td>
+            <td class="text-center align-middle" style="width: 30px; height: 50px;">
+                <i class="cursor-help fas fa-info-circle text-primary" data-toggle="tooltip" data-placement="left" data-title="{{Guid}}"></i>
+            </td>
+        </tr>
+    </script>
+</body>
+
+</html>
