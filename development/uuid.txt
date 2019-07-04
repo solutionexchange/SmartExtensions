@@ -124,6 +124,14 @@ b3098f0e-0083-47c7-a601-463566eddcfb	\publishing-manager\config\localized.de-DE.
 
 ----- ----- ----- ----- ----- ----- ----- -----
 
+33605704-8c65-47fb-91fd-46c2e302ce52	(Extension UUID) RQL Developer Console
+7c7d9e6d-f1a1-4803-b6df-b35a3f569587	\extension-template\index.html
+b2a0769e-6bee-4fff-ad20-f998ddab0990	\extension-template\js\functions.extension.js
+8df00fa7-67d2-4fcd-aa9b-f5395eed6a40	\extension-template\config\localized.de-DE.css
+68fd48ba-e720-40a4-b72a-e589815bbd70	\extension-template\config\localized.en-US.css
+
+----- ----- ----- ----- ----- ----- ----- -----
+
 aea16ded-3478-42c4-9678-66cb9ebe025c	(Extension UUID) WebService Tester
 3c06260b-174e-40ac-80ca-487f59b385e8	\webservice-tester\index.html
 6113686f-47af-44d2-a34b-fa24ba2534fc	\webservice-tester\js\functions.extension.js
@@ -144,11 +152,6 @@ b1565fd5-1e80-4335-88f2-d9dfad08c8b4    \config\localized.de-DE.css
 
 ----- ----- ----- ----- ----- ----- ----- -----
 
-33605704-8c65-47fb-91fd-46c2e302ce52
-7c7d9e6d-f1a1-4803-b6df-b35a3f569587
-b2a0769e-6bee-4fff-ad20-f998ddab0990
-8df00fa7-67d2-4fcd-aa9b-f5395eed6a40
-68fd48ba-e720-40a4-b72a-e589815bbd70
 52c463c2-e51c-4db7-9dbb-68e2544e29ca
 7498087a-54c8-438c-922a-1da832ee4a76
 49fdeb8a-d1c6-43a9-93ad-d3f29ca85bc8

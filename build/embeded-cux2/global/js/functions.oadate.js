@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1207
+   Package release 16.0.0.1250
    File UUID: bbf931c5-43bf-442b-bf9a-916e0eed411b
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -10,7 +10,7 @@
  * Convert a date to OLE automation date
  *
  * @author Thomas Pollinger 
- * @version 16.0.0.1207
+ * @version 16.0.0.1250
  * 
  * @this {toOADate}
  * 
@@ -31,7 +31,7 @@ Date.prototype.toOADate = function () {
  * Convert an OLE automation date to date
  *
  * @author Thomas Pollinger 
- * @version 16.0.0.1207
+ * @version 16.0.0.1250
  * 
  * @this {fromOADate}
  * 
@@ -50,7 +50,7 @@ Number.prototype.fromOADate = function () {
  * Calibrate the date object if necessary
  *
  * @author Thomas Pollinger 
- * @version 16.0.0.1207
+ * @version 16.0.0.1250
  * 
  * @this {calibrateDays}
  * 

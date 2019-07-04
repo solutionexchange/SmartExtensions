@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1207
+   Package release 16.0.0.1250
    File UUID: 78deefc1-3912-4b3e-9159-114b73976dc2
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -15,7 +15,7 @@
  * You can also list all plug-in authorizations.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1207
+ * @version 16.0.0.1250
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam currently not in use
@@ -99,7 +99,7 @@ function getPlugInsList(rqlConnectorObj, requestParam, callbackFunc) {
  * Use this RQL query to determine detailed information about one or several plug-ins.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1207
+ * @version 16.0.0.1250
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -213,7 +213,7 @@ function getPlugInDetails(rqlConnectorObj, requestParam, callbackFunc) {
  * You can use this RQL query to create the administrative note for a plug-in.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1207
+ * @version 16.0.0.1250
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -290,7 +290,7 @@ function createPlugIns(rqlConnectorObj, requestParam, callbackFunc) {
  * You can use this RQL query to enable or disable a plug-in.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1207
+ * @version 16.0.0.1250
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -374,7 +374,7 @@ function switchPlugInsActivation(rqlConnectorObj, requestParam, callbackFunc) {
  * You can use this RQL query to update the setttings of a plug-in.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1207
+ * @version 16.0.0.1250
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam

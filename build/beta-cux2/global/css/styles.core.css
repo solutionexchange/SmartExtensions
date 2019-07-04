@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1207
+   Package release 16.0.0.1250
    File UUID: 0c8ad6fe-91bf-4796-aa31-2bac266706a1
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -242,18 +242,23 @@ body {
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- */
 .height-default {
-    min-height: 500px;
-    max-height: 500px;
+    min-height: calc(100vh - 14.5rem);
+    max-height: calc(100vh - 14.5rem);
+}
+
+.height-default-footer {
+    min-height: calc(100vh - 18.44rem);
+    max-height: calc(100vh - 18.44rem);
 }
 
 .height-default-accordion {
-    min-height: 450px;
-    max-height: 450px;
+    min-height: calc(100vh - 17.5rem);
+    max-height: calc(100vh - 17.5rem);
 }
 
 .height-default-tabcontent {
-    min-height: 390px;
-    max-height: 390px;
+    min-height: calc(100vh - 21.25rem);
+    max-height: calc(100vh - 21.25rem);
 }
 
 .overflow-y-scroll {

@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1207
+   Package release 16.0.0.1250
    File UUID: 5c2a31c5-f9a0-4de1-9a78-5fd1e7eee56c
    ----- ----- ----- ----- ----- ----- ----- ----- */
 [lang-core="de-DE"] [data-localized-core="label-name"]>.logo::after {
@@ -68,6 +68,10 @@
 
 [lang-core="de-DE"] [data-localized-core="tooltip-resetSelection"]::after {
     content: "Auswahl zurücksetzen";
+}
+
+[lang-core="de-DE"] [data-localized-core="tooltip-resetAll"]::after {
+    content: "Alles zurücksetzen";
 }
 
 [lang-core="de-DE"] [data-localized-core="tooltip-selectAll"]::after {

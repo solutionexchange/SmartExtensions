@@ -70,6 +70,10 @@
     content: "Reset selection";
 }
 
+[lang-core="en-US"] [data-localized-core="tooltip-resetAll"]::after {
+    content: "Reset all";
+}
+
 [lang-core="en-US"] [data-localized-core="tooltip-selectAll"]::after {
     content: "Select all";
 }

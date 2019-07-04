@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1207
+   Package release 16.0.0.1250
    File UUID: 3fbb38e2-b314-4612-9377-db8d2ebc8e8a
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -12,7 +12,7 @@ class rqlConnector {
      * Creates an instance of rqlConnector.
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1207
+     * @version 16.0.0.1250
      * 
      * @param {uri} _baseHref
      * @param {string} _connectorMode
@@ -32,7 +32,7 @@ class rqlConnector {
                 name: `embeded-cux2`,
                 extensions: `Package-Embeded.xml`,
                 information: `Package-Information.xml`,
-                release: `16.0.0.1207`,
+                release: `16.0.0.1250`,
                 compatibility: `11.2.2.0`,
                 uuid: `547a762f-7aa1-466f-9501-99e2089562e7`
             },
@@ -62,7 +62,7 @@ class rqlConnector {
      *
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1207
+     * @version 16.0.0.1250
      * 
      * @param {function} callbackFunc
      * 
@@ -193,7 +193,7 @@ class rqlConnector {
      * 
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1207
+     * @version 16.0.0.1250
      * 
      * @param {string} rqlRequestBody
      * @param {boolean} isText
@@ -206,7 +206,7 @@ class rqlConnector {
         var thisClass = this;
         thisClass.debugMode && console.info(`Send request to SOAP/RQL WebService.`);
         thisClass.debugMode && console.log(`Query =>\n\t${rqlRequestBody}\n<= Query`);
-        thisClass.sendToConnectorProxy(rqlRequestBody, isText, callbackFunc, requestParam);
+        thisClass.sendToConnectorProxy(rqlRequestBody, isText, callbackFunc, requestParam, false);
     }
     /* ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -216,7 +216,7 @@ class rqlConnector {
      * 
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1207
+     * @version 16.0.0.1250
      * 
      * @param {string} rqlRequestBody
      * @param {boolean} isText
@@ -225,11 +225,34 @@ class rqlConnector {
      * 
      * @memberof rqlConnector
      */
-    sendToConnectorProxy(rqlRequestBody, isText, callbackFunc, requestParam) {
+    sendRqlRaw(rqlRequestBody, isText, callbackFunc, requestParam) {
+        var thisClass = this;
+        thisClass.debugMode && console.info(`Send raw request to SOAP/RQL WebService.`);
+        thisClass.debugMode && console.log(`Query =>\n\t${rqlRequestBody}\n<= Query`);
+        thisClass.sendToConnectorProxy(rqlRequestBody, isText, callbackFunc, requestParam, true);
+    }
+    /* ----- ----- ----- ----- ----- ----- ----- ----- */
+
+
+    /* ----- ----- ----- ----- ----- ----- ----- ----- */
+    /**
+     * 
+     * 
+     * @author Thomas Pollinger 
+     * @version 16.0.0.1250
+     * 
+     * @param {string} rqlRequestBody
+     * @param {boolean} isText
+     * @param {function} callbackFunc
+     * @param {object} requestParam
+     * 
+     * @memberof rqlConnector
+     */
+    sendToConnectorProxy(rqlRequestBody, isText, callbackFunc, requestParam, sendRaw) {
         var thisClass = this;
         var soapMessageTemplatePre = `<s:Envelope xmlns:s='http://schemas.xmlsoap.org/soap/envelope/'><s:Body><q1:Execute xmlns:q1='http://tempuri.org/RDCMSXMLServer/message/'><sParamA>`;
         var soapMessageTemplatePost = `</sParamA><sErrorA></sErrorA><sResultInfoA></sResultInfoA></q1:Execute></s:Body></s:Envelope>`;
-        var soapMessageBody = thisClass.padRQLXML(rqlRequestBody, isText, requestParam);
+        var soapMessageBody = thisClass.padRQLXML(rqlRequestBody, isText, requestParam, sendRaw);
         var soapMessage = `${soapMessageTemplatePre}<![CDATA[ ${soapMessageBody} ]]>${soapMessageTemplatePost}`;
         var timestamp = Date.now();
         $.post(
@@ -257,7 +280,7 @@ class rqlConnector {
                     clearInterval(thisClass.sessionKeepAliveTimer);
                     console.warn(`A possible existing heartbeat or session renewal has now been stopped.`);
                     thisClass.responseError = true;
-                    callbackFunc(responseData);
+                    callbackFunc(rqlResponseErrorA);
                 }
             },
             "text"
@@ -271,7 +294,7 @@ class rqlConnector {
      * 
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1207
+     * @version 16.0.0.1250
      * 
      * @param {function} callbackFunc
      * 
@@ -312,7 +335,7 @@ class rqlConnector {
      * 
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1207
+     * @version 16.0.0.1250
      * 
      * @param {function} callbackFunc
      * 
@@ -353,7 +376,7 @@ class rqlConnector {
      * Check for valid XML und add session data
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1207
+     * @version 16.0.0.1250
      * 
      * @param {string} rqlRequestBody
      * @param {boolean} isText
@@ -363,13 +386,17 @@ class rqlConnector {
      * 
      * @memberof rqlConnector
      */
-    padRQLXML(rqlRequestBody, isText, requestParam) {
+    padRQLXML(rqlRequestBody, isText, requestParam, sendRaw) {
         var thisClass = this;
         let rqlRequestTemplate = ``;
-        if (isText) {
-            rqlRequestTemplate = `<IODATA loginguid='${requestParam ? (requestParam.LoginGuid ? requestParam.LoginGuid : thisClass.info.session.LoginGuid) : thisClass.info.session.LoginGuid}' sessionkey='${requestParam ? (requestParam.SessionKey ? requestParam.SessionKey : thisClass.info.session.SessionKey) : thisClass.info.session.SessionKey}' dialoglanguageid='${requestParam ? (requestParam.DialogLanguageId ? requestParam.DialogLanguageId : thisClass.info.session.DialogLanguageId) : thisClass.info.session.DialogLanguageId}' format='1'>${rqlRequestBody}</IODATA>`;
+        if (!sendRaw) {
+            if (isText) {
+                rqlRequestTemplate = `<IODATA loginguid='${requestParam ? (requestParam.LoginGuid ? requestParam.LoginGuid : thisClass.info.session.LoginGuid) : thisClass.info.session.LoginGuid}' sessionkey='${requestParam ? (requestParam.SessionKey ? requestParam.SessionKey : thisClass.info.session.SessionKey) : thisClass.info.session.SessionKey}' dialoglanguageid='${requestParam ? (requestParam.DialogLanguageId ? requestParam.DialogLanguageId : thisClass.info.session.DialogLanguageId) : thisClass.info.session.DialogLanguageId}' format='1'>${rqlRequestBody}</IODATA>`;
+            } else {
+                rqlRequestTemplate = `<IODATA loginguid='${requestParam ? (requestParam.LoginGuid ? requestParam.LoginGuid : thisClass.info.session.LoginGuid) : thisClass.info.session.LoginGuid}' sessionkey='${requestParam ? (requestParam.SessionKey ? requestParam.SessionKey : thisClass.info.session.SessionKey) : thisClass.info.session.SessionKey}' dialoglanguageid='${requestParam ? (requestParam.DialogLanguageId ? requestParam.DialogLanguageId : thisClass.info.session.DialogLanguageId) : thisClass.info.session.DialogLanguageId}'>${rqlRequestBody}</IODATA>`;
+            }
         } else {
-            rqlRequestTemplate = `<IODATA loginguid='${requestParam ? (requestParam.LoginGuid ? requestParam.LoginGuid : thisClass.info.session.LoginGuid) : thisClass.info.session.LoginGuid}' sessionkey='${requestParam ? (requestParam.SessionKey ? requestParam.SessionKey : thisClass.info.session.SessionKey) : thisClass.info.session.SessionKey}' dialoglanguageid='${requestParam ? (requestParam.DialogLanguageId ? requestParam.DialogLanguageId : thisClass.info.session.DialogLanguageId) : thisClass.info.session.DialogLanguageId}'>${rqlRequestBody}</IODATA>`;
+            rqlRequestTemplate = rqlRequestBody;
         }
         var rqlRequest = $.parseXML(rqlRequestTemplate);
         thisClass.debugMode && console.log(`Call template =>\n\t${rqlRequestTemplate}\n<= Call template`);
@@ -389,7 +416,7 @@ class rqlConnector {
  * 
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1207
+ * @version 16.0.0.1250
  * 
  * @param {object} requestParam
  * @param {function} callbackFunc
@@ -421,7 +448,7 @@ function createRqlConnector(requestParam, callbackFunc) {
             release: `0.0.0.0`
         }
     }
-    if (connectorCookie.release == `16.0.0.1207`) {
+    if (connectorCookie.release == `16.0.0.1250`) {
         rqlConnectorObj = new rqlConnector(thisFunction.BaseHref, thisFunction.ConnectorMode);
         rqlConnectorObj.sendInit(
             function () {

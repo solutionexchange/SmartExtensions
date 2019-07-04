@@ -30,6 +30,10 @@ Remove-Item -Path C:\OpenText\WS\MS\ASP\PlugIns\beta*\ -Recurse -Force -ErrorAct
 if ($ErrorResult) {
     Write-Information $ErrorResult;
 }
+Remove-Item -Path C:\OpenText\WS\MS\ASP\PlugIns\embeded*\ -Recurse -Force -ErrorAction SilentlyContinue -ErrorVariable $ErrorResult;
+if ($ErrorResult) {
+    Write-Information $ErrorResult;
+}
 Remove-Item -Path C:\OpenText\WS\MS\ASP\PlugIns\owug*\ -Recurse -Force -ErrorAction SilentlyContinue -ErrorVariable $ErrorResult;
 if ($ErrorResult) {
     Write-Information $ErrorResult;
@@ -40,6 +44,7 @@ Write-BuildMessageState;
 
 Write-BuildMessage ("Copy new build version");
 Copy-Item -Path .\build\beta*\ -Destination C:\OpenText\WS\MS\ASP\PlugIns\ -Recurse -Force;
+Copy-Item -Path .\build\embeded*\ -Destination C:\OpenText\WS\MS\ASP\PlugIns\ -Recurse -Force;
 Copy-Item -Path .\build\owug*\ -Destination C:\OpenText\WS\MS\ASP\PlugIns\ -Recurse -Force;
 Write-BuildMessageState;
 

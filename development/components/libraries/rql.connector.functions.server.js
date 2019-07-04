@@ -220,10 +220,10 @@ function getServerDirectories(rqlConnectorObj, requestParam, callbackFunc) {
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- */
 /**
- * Listing All Directories
+ * Create New Directories
  * RQL documentation 16.0.3
  * 
- * You can list the subdirectories of a directory on the application server.
+ * You can create new subdirectories of a directory on the application server.
  * 
  * @author Thomas Pollinger 
  * @version {build-release}

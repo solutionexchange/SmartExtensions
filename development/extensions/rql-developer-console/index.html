@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+    Package release {build-release}
+    File UUID: 33605704-8c65-47fb-91fd-46c2e302ce52
+-->
+<html>
+
+<head>
+    <title>Package ({build-package}) : RQL Developer Console</title>
+    <meta uuid="33605704-8c65-47fb-91fd-46c2e302ce52" />
+    <meta file-uuid="7c7d9e6d-f1a1-4803-b6df-b35a3f569587" />
+    <meta version="{build-release}" />
+    <!-- Build-Include: head-meta -->
+    <!-- Build-Include: head-favicon -->
+    <!-- Build-Include: head-stylesheet-libraries-basics -->
+    <!-- Stylesheet: Libraries Extension (additionally for this extension) -->
+    <!-- Build-Include: head-stylesheet-core-basics -->
+    <!-- Build-Include: head-stylesheet-theme-opentext-cux2-extension -->
+    <!-- Build-Include: head-script-libraries-basics -->
+    <!-- Scripts: Libraries Extension (additionally for this extension) -->
+    <script src="../../libraries/ace/{build-library-ace-release}/src-min-noconflict/ace.js?release={build-library-ace-release}"></script>
+    <script src="../../libraries/clipboardjs/{build-library-clipboardjs-release}/clipboard.min.js?release={build-library-clipboardjs-release}"></script>
+    <!-- Build-Include: head-script-controller-basics -->
+    <!-- Scripts: RQL-Connector Extension (additionally for this extension) -->
+    <script src="../../components/libraries/rql.connector.functions.conversion.js?release={build-release}"></script>
+    <!-- Build-Include: head-script-core-basics -->
+    <!-- Scripts: Extension Basics -->
+    <script src="js/functions.extension.js?release={build-release}"></script>
+    <style type="text/css" media="screen">
+        #request,
+        #response {
+            position: absolute;
+            top: 49px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Build-Include: body-loading -->
+    <!-- Build-Include: body-no-support-ie -->
+    <!-- Dialog: Main -->
+    <div class="container-fluid fade" id="idMainDialog">
+        <!-- Build-Include: dialog-head-label-controls -->
+        <!-- Dialog: Body -->
+        <div class="row">
+            <div class="col-6">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        <span data-localized-extension="label-cardLeft"></span>
+                    </div>
+                    <div class="card-body height-default">
+                        <pre id="request"></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card shadow">
+                    <div class="card-header font-weight-bold">
+                        <span data-localized-extension="label-cardRight"></span>
+                    </div>
+                    <div class="card-body height-default">
+                        <pre id="response"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- Dialog: Footer -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-body pt-2 pb-2 d-flex justify-content-end">
+                        <!--
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-copySelection'></span>" id="copySelection">
+                            <i class="far fa-clone"></i>
+                        </button>
+-->
+                        <span>&nbsp;&nbsp;</span>
+                        <div class="btn-group" role="group" aria-label="controlsDefault">
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-resetSelection'></span>" id="resetAll">
+                                <i class="fas fa-eraser"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-html="true" data-title="<span data-localized-core='tooltip-reloadAll'></span>" id="reloadAll">
+                                <i class="fas fa-sync"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+    </div>
+    <!-- Build-Include: modal-loading -->
+    <!-- Build-Include: modal-about -->
+    <!-- Build-Include: modal-processing -->
+    <!-- Templates: Handlebars -->
+    <script id="template-itemXXX" type="text/x-handlebars-template">
+    </script>
+</body>
+
+</html>

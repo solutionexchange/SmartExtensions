@@ -18,6 +18,7 @@ $BuildSettings = @{
     InstallerSource       = ("Import-ExtensionPackageManager.xml");
     InstallerFile         = ("Installer.xml");
     Libraries             = @{
+        Ace                 = "1.4.5";
         Bootstrap           = "4.3.1-dist";
         ClipboardJS         = "2.0.4";
         FontAwesome         = "5.8.1";
@@ -189,7 +190,7 @@ $BuildPackages = @(
     },
     @{ #BETA (Ready for Production)
         Name                  = "beta";
-        PackageLabel          = " (beta)";
+        PackageLabel          = ""; #" (beta)";
         PackageExtensions     = "Package-Extensions.xml";
         PackageInformation    = "Package-Information.xml";
         Files                 = @();
@@ -232,7 +233,7 @@ $BuildPackages = @(
     },
     @{ #BETA-CUX2 (Ready for Production) incl. OpenText Common UX2.0
         Name                  = "beta-cux2";
-        PackageLabel          = " (beta-cux2)";
+        PackageLabel          = " (cux2)"; #" (beta-cux2)";
         PackageExtensions     = "Package-Extensions.xml";
         PackageInformation    = "Package-Information.xml";
         Files                 = @();
