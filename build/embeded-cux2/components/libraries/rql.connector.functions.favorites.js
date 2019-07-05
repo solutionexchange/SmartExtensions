@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1250
+   Package release 16.0.0.1253
    File UUID: a8fcb92c-d559-4bf9-a700-f213e1c3b654
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -13,7 +13,7 @@
  * You can display all the links, pages and content classes that a user has added to his or her favorites.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -143,7 +143,7 @@ function getFavorites(rqlConnectorObj, requestParam, callbackFunc) {
  * You can add links, pages, and content classes to the favorites. This makes it easer to find pages in the tree of the user interface.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -273,7 +273,7 @@ function addFavoriteEntries(rqlConnectorObj, requestParam, callbackFunc) {
  * When you have added elements to the favorites, you can remove them from the list again.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam

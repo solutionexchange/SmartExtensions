@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1250
+   Package release 16.0.0.1253
    File UUID: 13580c28-326b-4cc6-b294-08f37f2ae7c7
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -11,7 +11,7 @@ class opentext {
      * Creates an instance of opentext.
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1250
+     * @version 16.0.0.1253
      * 
      * @param {object} _rqlConnectorObj
      * 

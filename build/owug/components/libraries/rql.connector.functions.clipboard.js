@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1250
+   Package release 16.0.0.1253
    File UUID: 54dcf4d1-d00d-4e28-965f-3616b9c67a20
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -15,7 +15,7 @@
  * Starting with version 10.0 of Management Server, the Clipboard data can also be retrieved as a structured RQL response. See attribute foraspx for further details.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -117,7 +117,7 @@ function getClipboardData(rqlConnectorObj, requestParam, callbackFunc) {
  * The format for adding Clipboard entries is equivalent to the RQL response that is returned when querying for CLIPBOARDDATA (action="load") with foraspx="1".
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  *
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -188,7 +188,7 @@ function addClipboardEntry(rqlConnectorObj, requestParam, callbackFunc) {
  * The format for adding Clipboard entries is equivalent to the RQL response that is returned when querying for CLIPBOARDDATA (action="load") with foraspx="1".
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -266,7 +266,7 @@ function addClipboardEntries(rqlConnectorObj, requestParam, callbackFunc) {
  * The query format for removing clipboard entries is equivalent to the RQL response that is returned after a CLIPBOARDDATA query (action="load") with foraspx="1" has been executed.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -328,7 +328,7 @@ function removeClipboardEntry(rqlConnectorObj, requestParam, callbackFunc) {
  * The query format for removing clipboard entries is equivalent to the RQL response that is returned after a CLIPBOARDDATA query (action="load") with foraspx="1" has been executed.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam

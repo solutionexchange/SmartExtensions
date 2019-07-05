@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1250
+   Package release 16.0.0.1253
    File UUID: a09da92e-dfb4-42d1-9355-14e8c97d38ee
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -16,7 +16,7 @@
  * With this RQL query you can retrieve information about which kind of actions are permitted for which kind of asynchronous processes.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {function} callbackFunc
@@ -91,7 +91,7 @@ function getAsyncProcessCategories(rqlConnectorObj, callbackFunc) {
  * Contains a list of jobs which are either waiting to be executed, or are being executed by the process server.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam

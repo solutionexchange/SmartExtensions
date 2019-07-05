@@ -54,39 +54,46 @@ $(document)
                     "click",
                     function () {
                         hideTooltip();
-                        response.setValue("");
-                        thisButton = this;
-                        $("#reloadAll > .fa-sync").toggleClass("fa-spin text-danger");
-                        $(thisButton).prop("disabled", true);
-                        let rqlRequestRaw = request.getValue()
-                            .replace("[!guid_login!]", rqlConnectorObj.info.session.LoginGuid)
-                            .replace("[!key!]", rqlConnectorObj.info.session.SessionKey)
-                            .replace("[!guid_user!]", rqlConnectorObj.info.session.UserGuid)
-                            .replace("[!guid_project!]", rqlConnectorObj.info.session.ProjectGuid);
-                        let rqlRequestBody = $.parseXML(rqlRequestRaw);
-                        rqlConnectorObj
-                            .sendRqlRaw(
-                                (new XMLSerializer()).serializeToString(rqlRequestBody),
-                                false,
-                                function (rqlResponse) {
-                                    let responseData = rqlResponse;
-                                    console.info(`Received response from SOAP/RQL Connector Object.`);
-                                    console.log(`Type: ${typeof responseData}`);
-                                    console.log(responseData);
-                                    console.log(`<= fn\n\n\n`);
-                                    if (rqlConnectorObj.responseError === false) {
-                                        if (responseData != null) {
-                                            response.setValue(formatXml(new XMLSerializer().serializeToString(responseData).replace(/[\n\r]/g, ``)));
-                                        } else {
-                                            response.setValue(`Object => null`);
-                                        }
-                                    } else {
-                                        response.setValue(responseData);
-                                    }
-                                    response.navigateFileEnd();
-                                    request.focus();
+                        $("#modalProcessing")
+                            .modal("show")
+                            .ready(
+                                function () {
+                                    response.setValue("");
+                                    thisButton = this;
                                     $("#reloadAll > .fa-sync").toggleClass("fa-spin text-danger");
-                                    $(thisButton).prop("disabled", false);
+                                    $(thisButton).prop("disabled", true);
+                                    let rqlRequestRaw = request.getValue()
+                                        .replace("[!guid_login!]", rqlConnectorObj.info.session.LoginGuid)
+                                        .replace("[!key!]", rqlConnectorObj.info.session.SessionKey)
+                                        .replace("[!guid_user!]", rqlConnectorObj.info.session.UserGuid)
+                                        .replace("[!guid_project!]", rqlConnectorObj.info.session.ProjectGuid);
+                                    let rqlRequestBody = $.parseXML(rqlRequestRaw);
+                                    rqlConnectorObj
+                                        .sendRqlRaw(
+                                            (new XMLSerializer()).serializeToString(rqlRequestBody),
+                                            false,
+                                            function (rqlResponse) {
+                                                let responseData = rqlResponse;
+                                                console.info(`Received response from SOAP/RQL Connector Object.`);
+                                                console.log(`Type: ${typeof responseData}`);
+                                                console.log(responseData);
+                                                console.log(`<= fn\n\n\n`);
+                                                if (rqlConnectorObj.responseError === false) {
+                                                    if (responseData != null) {
+                                                        response.setValue(formatXml(new XMLSerializer().serializeToString(responseData).replace(/[\n\r]/g, ``)));
+                                                    } else {
+                                                        response.setValue(`Object => null`);
+                                                    }
+                                                } else {
+                                                    response.setValue(responseData);
+                                                }
+                                                response.navigateFileEnd();
+                                                request.focus();
+                                                $("#reloadAll > .fa-sync").toggleClass("fa-spin text-danger");
+                                                $(thisButton).prop("disabled", false);
+                                                $("#modalProcessing").modal("hide");
+                                            }
+                                        );
                                 }
                             );
                     }

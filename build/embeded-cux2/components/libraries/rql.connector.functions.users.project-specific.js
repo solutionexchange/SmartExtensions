@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1250
+   Package release 16.0.0.1253
    File UUID: 3a7fea7f-a0a7-4d68-a2ee-2e3a956fd4ed
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -13,7 +13,7 @@
  * You can list all users of a project, ordered by their ID.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -93,7 +93,7 @@ function getUsersOfProject(rqlConnectorObj, requestParam, callbackFunc) {
  * You can display all the users that are currently connected to a project. This is especially useful when you want to block a project, but have to inform the users first.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam

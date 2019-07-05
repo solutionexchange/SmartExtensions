@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1250
+   Package release 16.0.0.1253
    File UUID: 8fdcda28-6154-4740-a47d-3ae51a974b40
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -14,7 +14,7 @@
  * Note: Since this process is executed asynchronously, the results are not immediately visible.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -69,7 +69,7 @@ function sendEMail(rqlConnectorObj, requestParam, callbackFunc) {
  * 
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {function} callbackFunc
@@ -137,7 +137,7 @@ function sendHeartbeat(rqlConnectorObj, callbackFunc) {
  * 
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -186,7 +186,7 @@ function startHeartbeat(rqlConnectorObj, requestParam, callbackFunc) {
  * 
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam currently not in use
@@ -226,7 +226,7 @@ function stopHeartbeat(rqlConnectorObj, requestParam, callbackFunc) {
  * Test RQL for check Error Handling
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  */

@@ -252,8 +252,8 @@ body {
 }
 
 .height-default-accordion {
-    min-height: calc(100vh - 17.5rem);
-    max-height: calc(100vh - 17.5rem);
+    min-height: calc(100vh - 21.44rem);
+    max-height: calc(100vh - 21.44rem);
 }
 
 .height-default-tabcontent {

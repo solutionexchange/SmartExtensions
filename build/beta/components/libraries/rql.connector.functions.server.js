@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1250
+   Package release 16.0.0.1253
    File UUID: 4b2ef734-b796-407d-98e9-b5e5ed312cae
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -13,7 +13,7 @@
  * You can display important data of the application server. You have to know the server GUID.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -72,7 +72,7 @@ function getServerVersion(rqlConnectorObj, requestParam, callbackFunc) {
  * You can display all the hard drives of the application server. Floppy disk drives are not displayed.
  *
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -147,7 +147,7 @@ function getServerDrives(rqlConnectorObj, callbackFunc) {
  * You can list the subdirectories of a directory on the application server.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -226,7 +226,7 @@ function getServerDirectories(rqlConnectorObj, requestParam, callbackFunc) {
  * You can create new subdirectories of a directory on the application server.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -282,7 +282,7 @@ function newServerDirectory(rqlConnectorObj, requestParam, callbackFunc) {
  * You can use this RQL query to display the content of an XML or text file.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam
@@ -371,7 +371,7 @@ function getServerFileContent(rqlConnectorObj, requestParam, callbackFunc) {
  * Determin the list of charset available on this machine.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {function} callbackFunc

@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1250
+   Package release 16.0.0.1253
    File UUID: 491aa011-8f69-4f40-82bc-e2358a4b092d
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -12,7 +12,7 @@
  * You can list all existing project variants with name and GUID. Via the checked attribute in the response, you can see which project variant has been defined as the display format.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam currently not in use

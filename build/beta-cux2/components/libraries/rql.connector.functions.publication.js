@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1250
+   Package release 16.0.0.1253
    File UUID: 2277ca1f-4dcf-4682-9d48-2966e0f1d701
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -14,7 +14,7 @@
  * Note: The publication process is asynchronous and may take some time.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1250
+ * @version 16.0.0.1253
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam 

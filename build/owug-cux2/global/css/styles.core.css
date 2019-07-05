@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1250
+   Package release 16.0.0.1253
    File UUID: 0c8ad6fe-91bf-4796-aa31-2bac266706a1
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -252,8 +252,8 @@ body {
 }
 
 .height-default-accordion {
-    min-height: calc(100vh - 17.5rem);
-    max-height: calc(100vh - 17.5rem);
+    min-height: calc(100vh - 21.44rem);
+    max-height: calc(100vh - 21.44rem);
 }
 
 .height-default-tabcontent {
