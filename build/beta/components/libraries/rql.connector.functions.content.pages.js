@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1253
+   Package release 16.0.0.1259
    File UUID: 2f4cac10-efe5-4883-942e-0381ede3c977
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -13,7 +13,7 @@
  * You can display the basic information of a page.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1253
+ * @version 16.0.0.1259
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam

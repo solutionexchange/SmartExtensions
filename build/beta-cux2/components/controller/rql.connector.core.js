@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1253
+   Package release 16.0.0.1259
    File UUID: 3fbb38e2-b314-4612-9377-db8d2ebc8e8a
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -12,7 +12,7 @@ class rqlConnector {
      * Creates an instance of rqlConnector.
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1253
+     * @version 16.0.0.1259
      * 
      * @param {uri} _baseHref
      * @param {string} _connectorMode
@@ -32,7 +32,7 @@ class rqlConnector {
                 name: `beta-cux2`,
                 extensions: `Package-Extensions.xml`,
                 information: `Package-Information.xml`,
-                release: `16.0.0.1253`,
+                release: `16.0.0.1259`,
                 compatibility: `11.2.2.0`,
                 uuid: `547a762f-7aa1-466f-9501-99e2089562e7`
             },
@@ -62,7 +62,7 @@ class rqlConnector {
      *
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1253
+     * @version 16.0.0.1259
      * 
      * @param {function} callbackFunc
      * 
@@ -193,7 +193,7 @@ class rqlConnector {
      * 
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1253
+     * @version 16.0.0.1259
      * 
      * @param {string} rqlRequestBody
      * @param {boolean} isText
@@ -216,7 +216,7 @@ class rqlConnector {
      * 
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1253
+     * @version 16.0.0.1259
      * 
      * @param {string} rqlRequestBody
      * @param {boolean} isText
@@ -239,7 +239,7 @@ class rqlConnector {
      * 
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1253
+     * @version 16.0.0.1259
      * 
      * @param {string} rqlRequestBody
      * @param {boolean} isText
@@ -294,7 +294,7 @@ class rqlConnector {
      * 
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1253
+     * @version 16.0.0.1259
      * 
      * @param {function} callbackFunc
      * 
@@ -335,7 +335,7 @@ class rqlConnector {
      * 
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1253
+     * @version 16.0.0.1259
      * 
      * @param {function} callbackFunc
      * 
@@ -376,7 +376,7 @@ class rqlConnector {
      * Check for valid XML und add session data
      * 
      * @author Thomas Pollinger 
-     * @version 16.0.0.1253
+     * @version 16.0.0.1259
      * 
      * @param {string} rqlRequestBody
      * @param {boolean} isText
@@ -416,7 +416,7 @@ class rqlConnector {
  * 
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1253
+ * @version 16.0.0.1259
  * 
  * @param {object} requestParam
  * @param {function} callbackFunc
@@ -448,7 +448,7 @@ function createRqlConnector(requestParam, callbackFunc) {
             release: `0.0.0.0`
         }
     }
-    if (connectorCookie.release == `16.0.0.1253`) {
+    if (connectorCookie.release == `16.0.0.1259`) {
         rqlConnectorObj = new rqlConnector(thisFunction.BaseHref, thisFunction.ConnectorMode);
         rqlConnectorObj.sendInit(
             function () {

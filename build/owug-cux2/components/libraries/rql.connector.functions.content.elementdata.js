@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1253
+   Package release 16.0.0.1259
    File UUID: df00c97d-3edf-43eb-9149-8b2b54bb259d
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -13,7 +13,7 @@
  * You can display the properties of a page element, such as the GUID of the page to which the element belongs.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1253
+ * @version 16.0.0.1259
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam

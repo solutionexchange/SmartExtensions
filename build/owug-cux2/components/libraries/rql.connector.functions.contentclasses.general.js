@@ -1,5 +1,5 @@
 /* ----- ----- ----- ----- ----- ----- ----- -----
-   Package release 16.0.0.1253
+   Package release 16.0.0.1259
    File UUID: f976c388-8089-420f-93a7-a079c2c25850
    ----- ----- ----- ----- ----- ----- ----- ----- */
 
@@ -13,7 +13,7 @@
  * You can display the data of a content class if you know its GUID.
  * 
  * @author Thomas Pollinger 
- * @version 16.0.0.1253
+ * @version 16.0.0.1259
  * 
  * @param {object} rqlConnectorObj
  * @param {object} requestParam

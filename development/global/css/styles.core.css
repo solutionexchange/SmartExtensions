@@ -13,9 +13,9 @@
     content: "[Extension: "attr(data-localized-extension) "]";
 }
 
-[_lang-embeded] [data-localized-embeded]::before,
-[lang-embeded="debug"] [data-localized-embeded]::before {
-    content: "[Embeded: "attr(data-localized-embeded) "]";
+[_lang-embedded] [data-localized-embedded]::before,
+[lang-embedded="debug"] [data-localized-embedded]::before {
+    content: "[Embedded: "attr(data-localized-embedded) "]";
 }
 
 /* ----- ----- ----- ----- ----- ----- ----- ----- */
@@ -41,12 +41,12 @@
 }
 
 [data-localized-extension="label-name"]>.name,
-[data-localized-embeded="label-name"]>.name {
+[data-localized-embedded="label-name"]>.name {
     font-size: 23px;
 }
 
 [data-localized-extension="label-name"]>.name>sup,
-[data-localized-embeded="label-name"]>.name>sup {
+[data-localized-embedded="label-name"]>.name>sup {
     font-size: 11px;
     top: -9px;
     color: #7d7b7c;

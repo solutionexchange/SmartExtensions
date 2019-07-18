@@ -112,7 +112,7 @@ function initTooltip() {
     /* https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/ */
     /* https://getbootstrap.com/docs/4.3/getting-started/javascript/#sanitizer */
     var myDefaultWhiteList = $.fn.tooltip.Constructor.Default.whiteList;
-    myDefaultWhiteList.span = ['data-localized-core', 'data-localized-extension', 'data-localized-embeded'];
+    myDefaultWhiteList.span = ['data-localized-core', 'data-localized-extension', 'data-localized-embedded'];
 
     $("[data-toggle='tooltip']")
         .tooltip({
@@ -306,38 +306,38 @@ function setExtensionDialogLanguage(rqlConnectorObj) {
                         );
                 });
     }
-    /* Embeded */
-    if (thisFunction.ConnectorMode == "embeded") {
+    /* Embedded */
+    if (thisFunction.ConnectorMode == "embedded") {
         $.ajax({
-                url: `${thisFunction.BaseHref}/embeded/config/localized.${valueDialogLanguageId}${valueFileExtension}.css?release=${valueBuildNumber}`,
+                url: `${thisFunction.BaseHref}/embedded/config/localized.${valueDialogLanguageId}${valueFileExtension}.css?release=${valueBuildNumber}`,
                 dataType: `text`
             })
             .done(
                 function (dialogLanguageCSS) {
                     var style = "<style>" + dialogLanguageCSS + "</style>";
                     $("head").append(style);
-                    $("body").attr("lang-embeded", valueDialogLanguageId);
-                    thisFunction.DebugMode && console.log(`Localized embeded file for ${valueDialogLanguageId}${valueFileExtension} successfully loaded`);
+                    $("body").attr("lang-embedded", valueDialogLanguageId);
+                    thisFunction.DebugMode && console.log(`Localized embedded file for ${valueDialogLanguageId}${valueFileExtension} successfully loaded`);
                 })
             .fail(
                 function () {
-                    console.warn(`Localized embeded file for ${valueDialogLanguageId}${valueFileExtension} not availble - Loading fallback for embeded (en-US)`);
+                    console.warn(`Localized embedded file for ${valueDialogLanguageId}${valueFileExtension} not availble - Loading fallback for embedded (en-US)`);
                     var valueFallbackDialogLanguageId = "en-US";
                     $.ajax({
-                            url: `${thisFunction.BaseHref}/embeded/config/localized.${valueFallbackDialogLanguageId}${valueFileExtension}.css?release=${valueBuildNumber}`,
+                            url: `${thisFunction.BaseHref}/embedded/config/localized.${valueFallbackDialogLanguageId}${valueFileExtension}.css?release=${valueBuildNumber}`,
                             dataType: `text`
                         })
                         .done(
                             function (dialogLanguageCSS) {
                                 var style = "<style>" + dialogLanguageCSS + "</style>";
                                 $("head").append(style);
-                                $("body").attr("lang-embeded", valueFallbackDialogLanguageId);
-                                thisFunction.DebugMode && console.log(`Localized embeded file for ${valueFallbackDialogLanguageId}${valueFileExtension} successfully loaded`);
+                                $("body").attr("lang-embedded", valueFallbackDialogLanguageId);
+                                thisFunction.DebugMode && console.log(`Localized embedded file for ${valueFallbackDialogLanguageId}${valueFileExtension} successfully loaded`);
                             })
                         .fail(
                             function () {
-                                console.warn(`Localized embeded (fallback) file for ${valueFallbackDialogLanguageId}${valueFileExtension} not availble - Switch to debug mode!`);
-                                $("body").attr("lang-embeded", "debug");
+                                console.warn(`Localized embedded (fallback) file for ${valueFallbackDialogLanguageId}${valueFileExtension} not availble - Switch to debug mode!`);
+                                $("body").attr("lang-embedded", "debug");
                             }
                         );
                 });

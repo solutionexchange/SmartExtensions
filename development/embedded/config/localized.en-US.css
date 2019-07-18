@@ -1,0 +1,31 @@
+/* ----- ----- ----- ----- ----- ----- ----- -----
+   Package release {build-release}
+   File UUID: 90fb4dbf-d73d-4353-a27b-25fa974171b2
+   ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-embedded="en-US"] [data-localized-embedded="label-name"]>.name::before {
+    content: "Integration tester";
+}
+
+[lang-embedded="en-US"] [data-localized-embedded="label-name"]>.name>sup::after {
+    content: "(beta)";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-embedded="en-US"] [data-localized-embedded="text-id-001"]::after {
+    content: "Please check browser console for more information (F12).";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */
+[lang-embedded="en-US"] [data-localized-embedded="tab-id-001"]::after {
+    content: "Home";
+}
+
+[lang-embedded="en-US"] [data-localized-embedded="tab-id-002"]::after {
+    content: "Connector Object";
+}
+
+[lang-embedded="en-US"] [data-localized-embedded="tab-id-003"]::after {
+    content: "General";
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- */

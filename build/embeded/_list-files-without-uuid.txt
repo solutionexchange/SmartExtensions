@@ -1,3 +1,0 @@
-N/A => C:\Users\thomas.pollinger\OneDrive - Vodafone Group\GitHub\SmartExtensions\build\embeded\config\Package-Information.xml
-N/A => C:\Users\thomas.pollinger\OneDrive - Vodafone Group\GitHub\SmartExtensions\build\embeded\other\libraries.htm
-N/A => C:\Users\thomas.pollinger\OneDrive - Vodafone Group\GitHub\SmartExtensions\build\embeded\other\license.htm

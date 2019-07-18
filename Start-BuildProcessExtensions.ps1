@@ -21,10 +21,10 @@ $BuildSettings = @{
         Ace                 = "1.4.5";
         Bootstrap           = "4.3.1-dist";
         ClipboardJS         = "2.0.4";
-        FontAwesome         = "5.8.1";
+        FontAwesome         = "5.9.0";
         Gijgo               = "1.9.6a";
         Handlebars          = "4.1.2";
-        jQuery              = "3.4.0";
+        jQuery              = "3.4.1";
         jQueryScrollingTabs = "2.5.0";
         JQueryFreezeTable   = "1.2.0";
         JSCookie            = "2.2.0";
@@ -60,7 +60,7 @@ $BuildSettings = @{
         "components",
         "config",
         "global",
-        "embeded",
+        "embedded",
         "extensions"
     );
     IncludeFileExtensions = @(
@@ -148,7 +148,7 @@ $BuildPackages = @(
         InstallerSource       = $BuildSettings.InstallerSource;
         InstallerFile         = $BuildSettings.InstallerFile;
         Excludes              = $BuildSettings.Excludes + @(
-            "embeded"
+            "embedded"
         );
         Includes              = $BuildSettings.Includes;
         IncludePath           = $BuildSettings.IncludePath;
@@ -177,7 +177,7 @@ $BuildPackages = @(
         InstallerSource       = $BuildSettings.InstallerSource;
         InstallerFile         = $BuildSettings.InstallerFile;
         Excludes              = $BuildSettings.Excludes + @(
-            "embeded"
+            "embedded"
         );
         Includes              = $BuildSettings.Includes + @(
             "head-stylesheet-theme-opentext-cux2-extension"
@@ -208,7 +208,7 @@ $BuildPackages = @(
         InstallerSource       = $BuildSettings.InstallerSource;
         InstallerFile         = $BuildSettings.InstallerFile;
         Excludes              = $BuildSettings.Excludes + @(
-            "embeded",
+            "embedded",
             "extensions\cache-monitor",
             "extensions\Import-CacheMonitor.xml",
             "extensions\cluster-log-viewer",
@@ -251,7 +251,7 @@ $BuildPackages = @(
         InstallerSource       = $BuildSettings.InstallerSource;
         InstallerFile         = $BuildSettings.InstallerFile;
         Excludes              = $BuildSettings.Excludes + @(
-            "embeded",
+            "embedded",
             "extensions\cache-monitor",
             "extensions\Import-CacheMonitor.xml",
             "extensions\cluster-log-viewer",
@@ -276,10 +276,10 @@ $BuildPackages = @(
         IncludeSpecialFiles   = $BuildSettings.IncludeSpecialFiles;
         UUIDs                 = @();
     }
-    @{ #EMBEDED (Ready for Production)
-        Name                  = "embeded";
-        PackageLabel          = " (embeded)";
-        PackageExtensions     = "Package-Embeded.xml";
+    @{ #embedded (Ready for Production)
+        Name                  = "embedded";
+        PackageLabel          = " (embedded)";
+        PackageExtensions     = "Package-Embedded.xml";
         PackageInformation    = "Package-Information.xml";
         Files                 = @();
         ImportXmlFiles        = @();
@@ -305,10 +305,10 @@ $BuildPackages = @(
         IncludeSpecialFiles   = $BuildSettings.IncludeSpecialFiles;
         UUIDs                 = @();
     },
-    @{ #EMBEDED-CUX2 (Ready for Production) incl. OpenText Common UX2.0
-        Name                  = "embeded-cux2";
-        PackageLabel          = " (embeded-cux2)";
-        PackageExtensions     = "Package-Embeded.xml";
+    @{ #embedded-CUX2 (Ready for Production) incl. OpenText Common UX2.0
+        Name                  = "embedded-cux2";
+        PackageLabel          = " (embedded-cux2)";
+        PackageExtensions     = "Package-Embedded.xml";
         PackageInformation    = "Package-Information.xml";
         Files                 = @();
         ImportXmlFiles        = @();
@@ -328,7 +328,7 @@ $BuildPackages = @(
             "extensions"
         );
         Includes              = $BuildSettings.Includes + @(
-            "head-stylesheet-theme-opentext-cux2-embeded"
+            "head-stylesheet-theme-opentext-cux2-embedded"
         );
         IncludePath           = $BuildSettings.IncludePath;
         IncludeTargets        = $BuildSettings.IncludeTargets;
