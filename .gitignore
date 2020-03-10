@@ -1,2 +1,7 @@
+.idea/*
 /archive/*
+!/archive/.gitkeep
 /backup/*
+!/backup/.gitkeep
+/build/*
+!/build/.gitkeep
