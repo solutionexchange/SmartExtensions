@@ -5,3 +5,6 @@
 !/backup/.gitkeep
 /build/*
 !/build/.gitkeep
+/releases/*
+!/releases/.gitkeep
+
