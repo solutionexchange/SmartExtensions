@@ -3,18 +3,16 @@
    File UUID: 19ef8402-aa99-4c10-a026-fb3f0f9d1d44
    ----- ----- ----- ----- ----- ----- ----- ----- #>
 
-$MasterPath = ("C:\Users\thomas.pollinger\OneDrive - Vodafone Group\GitHub\SmartExtensions");
-
 $BuildSettings = @{
     Version               = ("16.0.0");
     Build                 = 0;
     Compatibility         = ("11.2.2.0");
     Config                = ("config");
     Development           = ("development");
-    Root                  = ("{0}" -f $MasterPath);
-    RootArchive           = ("{0}\archive" -f $MasterPath);
-    RootBackup            = ("{0}\backup" -f $MasterPath);
-    RootExport            = ("{0}\build" -f $MasterPath);
+    Root                  = ("{0}" -f $PSScriptRoot);
+    RootArchive           = ("{0}\archive" -f $PSScriptRoot);
+    RootBackup            = ("{0}\backup" -f $PSScriptRoot);
+    RootExport            = ("{0}\build" -f $PSScriptRoot);
     InstallerSource       = ("Import-ExtensionPackageManager.xml");
     InstallerFile         = ("Installer.xml");
     Libraries             = @{
